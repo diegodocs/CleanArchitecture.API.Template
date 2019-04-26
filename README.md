@@ -77,7 +77,7 @@ IntegrationTests:Longer running, more involved tests that test the integration o
 
 AcceptanceTests: SpecFlow acceptance tests project (may modify data, so are meant to run in non-production environments)
 
-You shouldn't find:
+## You shouldn't find:
 
   - Binaries committed to source control.
   - Unnecessary project or library references or third party frameworks.
