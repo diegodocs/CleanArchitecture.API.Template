@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <UserSecretsId>ae43800d-2bad-4597-a51d-58d909e1157f</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>    
+    <PackageReference Include="Autofac" Version="4.9.2" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.4.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="FluentMigrator.Runner" Version="3.2.1" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.2.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.WindowsServices" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.CommandLine" Version="2.2.0" />
+    <PackageReference Include="MimeMapping" Version="1.0.1.12" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="NLog" Version="4.6.2" />
+    <PackageReference Include="NLog.Web" Version="4.8.1" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="4.8.1" />    
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Api.Common.Repository.Contracts.Core\Api.Common.Repository.Contracts.Core.csproj" />
+    <ProjectReference Include="..\Api.Template.ApplicationService\Api.Template.ApplicationService.csproj" />
+    <ProjectReference Include="..\Api.Template.DbEFCore\Api.Template.DbEFCore.csproj" />
+    <ProjectReference Include="..\Api.Template.Infrastructure\Api.Template.Infrastructure.csproj" />
+    <ProjectReference Include="..\Api.Template.Mock.Infrastructure\Api.Common.Mock.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

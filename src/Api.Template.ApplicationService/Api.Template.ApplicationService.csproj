@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.2" />
+    <PackageReference Include="AutoMapper" Version="8.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Api.Template.DbEFCore\Api.Template.DbEFCore.csproj" />
+    <ProjectReference Include="..\Api.Common.Cqrs.Core\Api.Common.Cqrs.Core.csproj" />
+    <ProjectReference Include="..\Api.Template.Domain\Api.Template.Domain.csproj" />
+    <ProjectReference Include="..\Api.Common.WebServer\Api.Common.WebServer.csproj" />
+  </ItemGroup>
+
+</Project>
