@@ -26,33 +26,33 @@ namespace Api.Template.WebApi
 
                 var config = builder.Build();
 
-                var isService = !(Debugger.IsAttached || args.Contains("--console"));
+                var isWindowService = (!Debugger.IsAttached || args.Contains("--windowsservice"));
                 var pathToContentRoot = Directory.GetCurrentDirectory();
-
-                var webHostArgs = args.Where(arg => arg != "--console").ToArray();
-
-                if (isService)
+                
+                if (isWindowService)
                 {
                     var pathToExe = Process.GetCurrentProcess().MainModule.FileName;
                     pathToContentRoot = Path.GetDirectoryName(pathToExe);
 
-                    var host = WebHost.CreateDefaultBuilder(webHostArgs)
+                    var host = WebHost.CreateDefaultBuilder(args)
                         .UseKestrel()
                         .UseConfiguration(config)
                         .ConfigureServices(s => s.AddAutofac())
                         .UseContentRoot(pathToContentRoot)
                         .UseStartup<Startup>()
+                        .UseNLog()
                         .Build();
 
                     host.RunAsService();
                 }
                 else
                 {
-                    var host = WebHost.CreateDefaultBuilder(webHostArgs)
+                    var host = WebHost.CreateDefaultBuilder(args)
                         .UseConfiguration(config)
                         .ConfigureServices(s => s.AddAutofac())
                         .UseContentRoot(pathToContentRoot)
                         .UseStartup<Startup>()
+                        .UseNLog()
                         .Build();
 
                     host.Run();

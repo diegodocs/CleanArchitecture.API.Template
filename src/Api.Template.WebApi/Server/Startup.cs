@@ -94,19 +94,19 @@ namespace Api.Template.WebApi.Server
             });
 
             //Execute Database Migration
-            UpdateDatabaseUsingEfCore(app);
+            //UpdateDatabaseUsingEfCore(app);
         }
 
-        private void UpdateDatabaseUsingEfCore(IApplicationBuilder app)
-        {
-            using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
-            {
-                serviceScope
-                    .ServiceProvider
-                    .GetRequiredService<EfCoreDbContext>()
-                    .Database
-                    .Migrate();
-            }
-        }
+        //private void UpdateDatabaseUsingEfCore(IApplicationBuilder app)
+        //{
+        //    using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
+        //    {
+        //        serviceScope
+        //            .ServiceProvider
+        //            .GetRequiredService<EfCoreDbContext>()
+        //            .Database
+        //            .Migrate();
+        //    }
+        //}
     }
 }

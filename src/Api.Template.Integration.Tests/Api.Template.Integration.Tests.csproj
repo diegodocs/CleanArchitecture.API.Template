@@ -44,7 +44,7 @@
     <ProjectReference Include="..\Api.Template.Domain\Api.Template.Domain.csproj" />
     <ProjectReference Include="..\Api.Template.Infrastructure\Api.Template.Infrastructure.csproj" />
     <ProjectReference Include="..\Api.Template.Mock.Infrastructure\Api.Common.Mock.Infrastructure.csproj" />
-    <ProjectReference Include="..\CleanArch.Api.Template\Api.Template.WebApi.csproj" />
+    <ProjectReference Include="..\Api.Template.WebApi\Api.Template.WebApi.csproj" />
   </ItemGroup>
 
 </Project>

@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Template.WebApi", "CleanArch.Api.Template\Api.Template.WebApi.csproj", "{83363E48-1C78-4871-BCC8-96B73A4A6B95}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Core", "0 - Core", "{6A78075F-A6F2-4945-8212-1EE50EBAD04E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1  - Domain", "1  - Domain", "{F86976AC-A99D-460D-A85E-99115CCC1C1D}"
@@ -14,9 +12,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infrastructure", "3 - Infrastructure", "{5A78E915-A0E1-4062-A6BF-968583903B4F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - EntryPoints", "4 - EntryPoints", "{63A20FD3-D08F-434D-B4BB-B94301825976}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\..\..\working\git-alper\Alper.PortalRH.Backend.CI\Api.PortalRH.WebApi\nlog.config = ..\..\..\..\..\..\working\git-alper\Alper.PortalRH.Backend.CI\Api.PortalRH.WebApi\nlog.config
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Tests", "5 - Tests", "{4DCFFCDB-4A0A-4A2C-AB6A-79CB68E778E3}"
 EndProject
@@ -44,16 +39,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Template.Domain.Tests",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Template.Integration.Tests", "Api.Template.Integration.Tests\Api.Template.Integration.Tests.csproj", "{D8A95A87-48B4-4D17-952B-85AD40B4DAA4}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Template.WebApi", "Api.Template.WebApi\Api.Template.WebApi.csproj", "{35672A40-DCA2-487D-8F61-D550095EA7A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{83363E48-1C78-4871-BCC8-96B73A4A6B95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{83363E48-1C78-4871-BCC8-96B73A4A6B95}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{83363E48-1C78-4871-BCC8-96B73A4A6B95}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{83363E48-1C78-4871-BCC8-96B73A4A6B95}.Release|Any CPU.Build.0 = Release|Any CPU
 		{737209C3-4852-4601-B318-0797195D87EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{737209C3-4852-4601-B318-0797195D87EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{737209C3-4852-4601-B318-0797195D87EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -102,12 +95,15 @@ Global
 		{D8A95A87-48B4-4D17-952B-85AD40B4DAA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8A95A87-48B4-4D17-952B-85AD40B4DAA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8A95A87-48B4-4D17-952B-85AD40B4DAA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35672A40-DCA2-487D-8F61-D550095EA7A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35672A40-DCA2-487D-8F61-D550095EA7A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35672A40-DCA2-487D-8F61-D550095EA7A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35672A40-DCA2-487D-8F61-D550095EA7A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{83363E48-1C78-4871-BCC8-96B73A4A6B95} = {63A20FD3-D08F-434D-B4BB-B94301825976}
 		{737209C3-4852-4601-B318-0797195D87EC} = {6A78075F-A6F2-4945-8212-1EE50EBAD04E}
 		{6B5B09E0-966C-4BC6-932F-A855F54B466A} = {6A78075F-A6F2-4945-8212-1EE50EBAD04E}
 		{F1DE00A7-2017-4399-8638-7BE9AF8B58DD} = {6A78075F-A6F2-4945-8212-1EE50EBAD04E}
@@ -120,6 +116,7 @@ Global
 		{978AD84D-0894-4220-87C1-DD3A67A1CD0D} = {6A78075F-A6F2-4945-8212-1EE50EBAD04E}
 		{8EF59D68-CE21-49B3-9F5D-F94048F79C95} = {4DCFFCDB-4A0A-4A2C-AB6A-79CB68E778E3}
 		{D8A95A87-48B4-4D17-952B-85AD40B4DAA4} = {4DCFFCDB-4A0A-4A2C-AB6A-79CB68E778E3}
+		{35672A40-DCA2-487D-8F61-D550095EA7A5} = {63A20FD3-D08F-434D-B4BB-B94301825976}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AF3A729-4604-4020-8C11-4EB2FD303332}
