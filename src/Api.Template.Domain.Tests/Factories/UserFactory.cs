@@ -27,10 +27,5 @@ namespace Api.Template.Domain.Tests.Factories
         {
             return userAppService.GetById(userId);
         }
-
-        public IEnumerable<UserViewModel> GetApproverUsers()
-        {
-            return userAppService.GetApproverUsers();
-        }
     }
 }

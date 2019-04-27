@@ -28,7 +28,6 @@ namespace Api.Template.Domain.Tests.Factories
                 Description = "2016 Fund L.P.",               
                 Id = Guid.NewGuid(),
                 IsActive = true,
-                LegalName = "2016 Fund L.P.",
                 Name = " Fund"                
             };
 
@@ -37,7 +36,7 @@ namespace Api.Template.Domain.Tests.Factories
 
         public FundViewModel Create(Fund fund)
         {
-            var command = new CreateFundCommand(fund.Name, fund.Description, fund.LegalName);
+            var command = new CreateFundCommand(fund.Name, fund.Description);
             return Create(command);
         }
 
@@ -75,7 +74,6 @@ namespace Api.Template.Domain.Tests.Factories
             response.Id.Should().NotBe(Guid.Empty);
             response.Name.Should().Be(command.Name);
             response.Description.Should().Be(command.Description);
-            response.LegalName.Should().Be(command.LegalName);
 
             return response;
         }
@@ -93,7 +91,6 @@ namespace Api.Template.Domain.Tests.Factories
             response.Id.Should().Be(command.Id);
             response.Name.Should().Be(command.Name);
             response.Description.Should().Be(command.Description);
-            response.LegalName.Should().Be(command.LegalName);
 
             return response;
         }

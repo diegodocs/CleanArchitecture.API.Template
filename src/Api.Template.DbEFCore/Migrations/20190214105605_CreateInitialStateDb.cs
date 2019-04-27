@@ -17,8 +17,7 @@ namespace Api.Template.DbEFCore.Migrations
                     AuditUserId = table.Column<Guid>(nullable: false),
                     IsActive = table.Column<bool>(nullable: false),
                     Name = table.Column<string>(maxLength: 255, nullable: false),
-                    Description = table.Column<string>(maxLength: 255, nullable: true),
-                    LegalName = table.Column<string>(maxLength: 255, nullable: false)
+                    Description = table.Column<string>(maxLength: 255, nullable: true)
                 },
                 constraints: table =>
                 {

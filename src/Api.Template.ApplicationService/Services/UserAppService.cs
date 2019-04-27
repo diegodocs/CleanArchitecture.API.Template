@@ -23,13 +23,7 @@ namespace Api.Template.ApplicationService.Services
         {
             this.userRepository = userRepository;
         }
-
-        public IEnumerable<UserViewModel> GetApproverUsers()
-        {
-            var approvers = userRepository.FindList(u => u.Id != CurrentUser.Id && u.IsApprover);
-            return Mapper.Map<IEnumerable<UserViewModel>>(approvers);
-        }
-
+        
         public UserViewModel GetById(Guid id)
         {
             return Mapper.Map<UserViewModel>(userRepository.FindById(id));

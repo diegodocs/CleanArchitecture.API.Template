@@ -13,10 +13,5 @@ namespace Api.Template.Domain.Models
         [MinLength(2)]
         [MaxLength(255)]
         public string Description { get; set; }
-        
-        [MinLength(2)]
-        [MaxLength(255)]
-        [Required]
-        public string LegalName { get; set; }
     }
 }

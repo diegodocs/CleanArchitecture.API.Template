@@ -1,10 +1,10 @@
-﻿using Api.Common.WebServer.Server;
+﻿using Api.Common.Mock.Infrastructure.InjectionModules;
+using Api.Common.WebServer.Server;
 using Api.Template.ApplicationService.InjectionModules;
 using Api.Template.DbEFCore.Repositories;
 using Api.Template.Domain.InjectionModules;
-using Api.Template.Infrastructure.InjectionModules;
-using Autofac;
 using Api.Template.WebApi.Server.Middlewares;
+using Autofac;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -12,10 +12,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using Swashbuckle.AspNetCore.Swagger;
-using System;
 using NLog.Web;
-using Api.Common.Mock.Infrastructure.InjectionModules;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace Api.Template.WebApi.Server
 {

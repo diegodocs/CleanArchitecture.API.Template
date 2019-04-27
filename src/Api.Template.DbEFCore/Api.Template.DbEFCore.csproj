@@ -3,6 +3,7 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFramework>netcoreapp2.2</TargetFramework>
+    <LangVersion>7.2</LangVersion>
     <ApplicationIcon />
     <StartupObject />
   </PropertyGroup>

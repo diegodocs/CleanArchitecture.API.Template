@@ -33,10 +33,6 @@ namespace Api.Template.DbEFCore.Migrations
 
                     b.Property<bool>("IsActive");
 
-                    b.Property<string>("LegalName")
-                        .IsRequired()
-                        .HasMaxLength(255);
-
                     b.Property<DateTime?>("ModifiedDate");
 
                     b.Property<string>("Name")

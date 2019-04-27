@@ -27,8 +27,7 @@ namespace Api.Template.Domain.CommandHandlers.Funds
                 {
                     Name = command.Name,
                     Description = command.Description,
-                    AuditUserId = command.AuditUserId,                    
-                    LegalName = command.LegalName                    
+                    AuditUserId = command.AuditUserId                
                 };
 
                 //Persistence

@@ -7,7 +7,6 @@ namespace Api.Template.ApplicationService.Interfaces
 {
     public interface IUserAppService : IBaseAppService
     {
-        IEnumerable<UserViewModel> GetApproverUsers();
         UserViewModel GetById(Guid id);
         UserViewModel Login(LoginUserCommand command);
     }

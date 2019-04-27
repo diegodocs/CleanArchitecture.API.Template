@@ -23,13 +23,7 @@ namespace Api.Template.WebApi.Controllers
 
             return Ok(loggedUser);
         }
-
-        [HttpGet("approvers")]
-        public IActionResult GetApproverUsers()
-        {
-            return Ok(userAppService.GetApproverUsers());
-        }
-
+        
         [HttpGet("{id}")]
         public IActionResult Get(Guid id)
         {

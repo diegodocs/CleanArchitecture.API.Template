@@ -25,9 +25,8 @@ namespace Api.Template.Domain.Tests.Models
             //arrange
             var name = "";
             var description = "";
-            var legalName = "";
-
-            var command = new CreateFundCommand(name, description, legalName);
+            
+            var command = new CreateFundCommand(name, description);
 
             //act
             Action action = () => { fundFactory.Create(command); };
@@ -50,7 +49,6 @@ namespace Api.Template.Domain.Tests.Models
             responseFindById.Id.Should().Be(responseCreate.Id);
             responseFindById.Name.Should().Be(responseCreate.Name);
             responseFindById.Description.Should().Be(responseCreate.Description);
-            responseFindById.LegalName.Should().Be(responseCreate.LegalName);
         }
 
         [Test]
@@ -59,15 +57,13 @@ namespace Api.Template.Domain.Tests.Models
             //arrange
             var expectedNameAfterUpdate = $"AfterUpdate-Fund-Test-{DateTime.UtcNow.ToLongTimeString()}";
             var expectedDescriptionAfterUpdate = $"AfterUpdate-Description-Test-{DateTime.UtcNow.ToLongTimeString()}";
-            var expectedLegalName = $"AfterUpdate-LegalName-Test-{DateTime.UtcNow.ToLongTimeString()}";
-
+            
             //act
             var responseCreate = fundFactory.Create();
             var commandUpdate = new UpdateFundCommand(
                 responseCreate.Id,
                 expectedNameAfterUpdate,
-                expectedDescriptionAfterUpdate,
-                expectedLegalName);
+                expectedDescriptionAfterUpdate);
 
             var responseUpdate = fundFactory.Update(commandUpdate);
             var responseFindById = fundFactory.GetById(responseCreate.Id);
@@ -76,7 +72,6 @@ namespace Api.Template.Domain.Tests.Models
             responseFindById.Id.Should().Be(responseUpdate.Id);
             responseFindById.Name.Should().Be(responseUpdate.Name);
             responseFindById.Description.Should().Be(responseUpdate.Description);
-            responseFindById.LegalName.Should().Be(responseUpdate.LegalName);
         }
 
         [Test]
@@ -85,15 +80,13 @@ namespace Api.Template.Domain.Tests.Models
             //arrange
             var expectedNameAfterUpdate = $"AfterUpdate-Fund-Test-{DateTime.UtcNow.ToLongTimeString()}";
             var expectedDescriptionAfterUpdate = $"AfterUpdate-Description-Test-{DateTime.UtcNow.ToLongTimeString()}";                        
-            var expectedLegalName = $"AfterUpdate-LegalName-Test-{DateTime.UtcNow.ToLongTimeString()}";
-
+            
             //act
             var responseCreate = fundFactory.Create();
             var commandUpdate = new UpdateFundCommand(
                 responseCreate.Id,
                 expectedNameAfterUpdate,
-                expectedDescriptionAfterUpdate,                
-                expectedLegalName);
+                expectedDescriptionAfterUpdate);
 
             fundFactory.Update(commandUpdate);
             fundFactory.Delete(responseCreate.Id);
@@ -110,9 +103,8 @@ namespace Api.Template.Domain.Tests.Models
             //arrange
             var name = $"Fund L.P.";
             var description = $"";
-            var legalName = $"Fund L.P.";
 
-            var command = new CreateFundCommand(name, description, legalName);
+            var command = new CreateFundCommand(name, description);
 
             //act
             Action action = () => { fundFactory.Create(command); };
@@ -131,10 +123,9 @@ namespace Api.Template.Domain.Tests.Models
             var expectedNumberOfErrors = 1;
 
             var name = $"";
-            var description = $"Fund L.P.";
-            var legalName = $"Fund L.P.";            
+            var description = $"Fund L.P.";          
 
-            var command = new CreateFundCommand(name, description, legalName);
+            var command = new CreateFundCommand(name, description);
 
             //act
             Action action = () => { fundFactory.Create(command); };

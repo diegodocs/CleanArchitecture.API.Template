@@ -26,7 +26,6 @@ namespace Api.Template.Domain.CommandHandlers.Funds
                 var fund = fundRepository.FindById(command.Id);
                 fund.Name = command.Name;
                 fund.Description = command.Description;
-                fund.LegalName = command.LegalName;
                 fund.AuditUserId = command.AuditUserId;                
 
                 //Persistence

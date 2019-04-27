@@ -41,8 +41,6 @@ namespace Api.Template.ApplicationService.Services
 
         public FundViewModel Create(CreateFundCommand command)
         {
-            command.AuditUserId = this.CurrentUser.Id;
-
             return Mapper
                 .Map<FundViewModel>(
                     MessageBus.DispatchCommandTwoWay<CreateFundCommand, Fund>(command).Result);
@@ -50,8 +48,6 @@ namespace Api.Template.ApplicationService.Services
 
         public FundViewModel Update(UpdateFundCommand command)
         {
-            command.AuditUserId = this.CurrentUser.Id;
-
             return Mapper
                 .Map<FundViewModel>(
                     MessageBus.DispatchCommandTwoWay<UpdateFundCommand, Fund>(command).Result);
@@ -59,8 +55,6 @@ namespace Api.Template.ApplicationService.Services
 
         public void Delete(DeleteFundCommand command)
         {
-            command.AuditUserId = this.CurrentUser.Id;
-
             MessageBus.DispatchCommand(command);
         }
     }

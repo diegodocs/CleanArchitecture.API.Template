@@ -12,6 +12,6 @@ namespace Api.Template.Domain.Commands.Funds
         }
 
         [Required]
-        public Guid Id { get; protected set; }
+        public Guid Id { get; set; }
     }
 }

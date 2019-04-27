@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
+    <LangVersion>7.2</LangVersion>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <UserSecretsId>ae43800d-2bad-4597-a51d-58d909e1157f</UserSecretsId>
@@ -26,7 +27,6 @@
     <PackageReference Include="MimeMapping" Version="1.0.1.12" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
     <PackageReference Include="NLog" Version="4.6.2" />
-    <PackageReference Include="NLog.Web" Version="4.8.1" />
     <PackageReference Include="NLog.Web.AspNetCore" Version="4.8.1" />    
     <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
   </ItemGroup>

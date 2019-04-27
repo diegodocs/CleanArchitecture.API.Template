@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <RootNamespace>Api.Template.Domain.Tests</RootNamespace>
+    <LangVersion>7.2</LangVersion>
     <ApplicationIcon />
     <OutputType>Library</OutputType>
     <StartupObject />

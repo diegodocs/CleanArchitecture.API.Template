@@ -21,10 +21,10 @@ namespace Api.Template.Integration.Tests.Factories
             this.client = client;
         }
 
-        public async Task<FundViewModel> Create(string name, string description, string legalName)
+        public async Task<FundViewModel> Create(string name, string description)
         {            
             //Act
-            var responseModel = await Create(new CreateFundCommand(name, description, legalName));
+            var responseModel = await Create(new CreateFundCommand(name, description));
             var viewModel = JsonConvert.DeserializeObject<FundViewModel>(responseModel.Result.ToString());
 
             // Assert
@@ -42,9 +42,8 @@ namespace Api.Template.Integration.Tests.Factories
         {
             var name = $"Fund";
             var description = "Fund L.P.";
-            var legalName = $"Fund L.P.";
 
-            return await Create(name, description, legalName);
+            return await Create(name, description);
         }
 
         public async Task Delete(Guid id)
@@ -90,9 +89,8 @@ namespace Api.Template.Integration.Tests.Factories
             // Arrange           
             viewModel.Name = $"{viewModel.Name}-{DateTime.UtcNow.ToLongTimeString()}";
             viewModel.Description = $"{viewModel.Description}-{DateTime.UtcNow.ToLongTimeString()}";
-            viewModel.LegalName = $"{viewModel.LegalName}-{DateTime.UtcNow.ToLongTimeString()}";
-
-            var command = new UpdateFundCommand(viewModel.Id, viewModel.Name, viewModel.Description, viewModel.LegalName);
+            
+            var command = new UpdateFundCommand(viewModel.Id, viewModel.Name, viewModel.Description);
             var requestBody = new StringContent(JsonConvert.SerializeObject(command), Encoding.UTF8, "application/json");
 
             // Act
