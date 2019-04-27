@@ -5,15 +5,13 @@ namespace Api.Template.Domain.Events
 {
     public class FundCreatedEvent : Event
     {
-        public FundCreatedEvent(Guid id, string name, string description, DateTime createDate, DateTime modifiedDate,
-            Guid auditUserId)
+        public FundCreatedEvent(Guid id, string name, string description, DateTime createDate, DateTime modifiedDate)
         {
             Id = id;
             Name = name;
             Description = description;
             CreateDate = createDate;
             ModifiedDate = modifiedDate;
-            AuditUserId = auditUserId;
         }
 
         public Guid Id { get; protected set; }

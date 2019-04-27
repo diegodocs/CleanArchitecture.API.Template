@@ -5,8 +5,7 @@ namespace Api.Template.Domain.Events
 {
     public class FundGroupCreatedEvent : Event
     {
-        public FundGroupCreatedEvent(Guid id, string name, string description, bool isActive, Guid userId, DateTime createDate, DateTime modifiedDate,
-            Guid auditUserId)
+        public FundGroupCreatedEvent(Guid id, string name, string description, bool isActive, Guid userId, DateTime createDate, DateTime modifiedDate)
         {
             Id = id;
             Name = name;
@@ -15,7 +14,6 @@ namespace Api.Template.Domain.Events
             UserId = userId;
             CreateDate = createDate;
             ModifiedDate = modifiedDate;
-            AuditUserId = auditUserId;
         }
 
         public Guid Id { get; protected set; }

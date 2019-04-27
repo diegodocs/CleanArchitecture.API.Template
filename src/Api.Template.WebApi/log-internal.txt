@@ -392,3 +392,153 @@
 2019-04-27 07:20:54.3339 Info Logger has been closed down.
 2019-04-27 07:20:54.3339 Info AppDomain Shutting down. Logger closing...
 2019-04-27 07:20:54.3517 Info Logger has been shut down.
+2019-04-27 07:22:09.5530 Info Message Template Auto Format enabled
+2019-04-27 07:22:09.5996 Info Loading assembly: NLog.Web.AspNetCore
+2019-04-27 07:22:09.9666 Info Adding target FileTarget(Name=allfile)
+2019-04-27 07:22:10.1492 Error Parsing configuration from C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\bin\Debug\netcoreapp2.2\nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\bin\Debug\netcoreapp2.2\nlog.config.  ---> NLog.NLogConfigurationException: Target 'ownFile-web' not found for logging rule: *.
+   at NLog.Config.LoggingConfigurationParser.ParseLoggingRuleTargets(String writeTargets, LoggingRule rule)
+   at NLog.Config.LoggingConfigurationParser.ParseRuleElement(ILoggingConfigurationElement loggerElement)
+   at NLog.Config.LoggingConfigurationParser.ParseRulesElement(ILoggingConfigurationElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.LoggingConfigurationParser.LoadConfig(ILoggingConfigurationElement nlogConfig, String basePath)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(ILoggingConfigurationElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2019-04-27 07:22:10.1570 Warn Failed loading config from C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\bin\Debug\netcoreapp2.2\nlog.config. Invalid XML?
+2019-04-27 07:22:10.2478 Info Found 23 configuration items
+2019-04-27 07:22:11.8941 Info Configuring from an XML element in C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\nlog.config...
+2019-04-27 07:22:11.8941 Info Message Template Auto Format enabled
+2019-04-27 07:22:11.8941 Info Loading assembly: NLog.Web.AspNetCore
+2019-04-27 07:22:11.9074 Info Adding target FileTarget(Name=allfile)
+2019-04-27 07:22:11.9074 Error Parsing configuration from C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\nlog.config.  ---> NLog.NLogConfigurationException: Target 'ownFile-web' not found for logging rule: *.
+   at NLog.Config.LoggingConfigurationParser.ParseLoggingRuleTargets(String writeTargets, LoggingRule rule)
+   at NLog.Config.LoggingConfigurationParser.ParseRuleElement(ILoggingConfigurationElement loggerElement)
+   at NLog.Config.LoggingConfigurationParser.ParseRulesElement(ILoggingConfigurationElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.LoggingConfigurationParser.LoadConfig(ILoggingConfigurationElement nlogConfig, String basePath)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(ILoggingConfigurationElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2019-04-27 07:22:11.9203 Warn Failed loading config from C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\nlog.config. Invalid XML?
+2019-04-27 07:22:11.9203 Info Closing old configuration.
+2019-04-27 07:22:11.9509 Info Found 23 configuration items
+2019-04-27 07:23:08.8046 Info Message Template Auto Format enabled
+2019-04-27 07:23:08.8802 Info Loading assembly: NLog.Web.AspNetCore
+2019-04-27 07:23:09.8142 Info Adding target FileTarget(Name=allfile)
+2019-04-27 07:23:10.6000 Error Parsing configuration from C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\bin\Debug\netcoreapp2.2\nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\bin\Debug\netcoreapp2.2\nlog.config.  ---> NLog.NLogConfigurationException: Target 'ownFile-web' not found for logging rule: *.
+   at NLog.Config.LoggingConfigurationParser.ParseLoggingRuleTargets(String writeTargets, LoggingRule rule)
+   at NLog.Config.LoggingConfigurationParser.ParseRuleElement(ILoggingConfigurationElement loggerElement)
+   at NLog.Config.LoggingConfigurationParser.ParseRulesElement(ILoggingConfigurationElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.LoggingConfigurationParser.LoadConfig(ILoggingConfigurationElement nlogConfig, String basePath)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(ILoggingConfigurationElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2019-04-27 07:23:10.6000 Warn Failed loading config from C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\bin\Debug\netcoreapp2.2\nlog.config. Invalid XML?
+2019-04-27 07:23:11.1044 Info Found 23 configuration items
+2019-04-27 07:23:13.3771 Info Configuring from an XML element in C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\nlog.config...
+2019-04-27 07:23:13.3771 Info Message Template Auto Format enabled
+2019-04-27 07:23:13.3771 Info Loading assembly: NLog.Web.AspNetCore
+2019-04-27 07:23:13.3771 Info Adding target FileTarget(Name=allfile)
+2019-04-27 07:23:13.3771 Error Parsing configuration from C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\nlog.config.  ---> NLog.NLogConfigurationException: Target 'ownFile-web' not found for logging rule: *.
+   at NLog.Config.LoggingConfigurationParser.ParseLoggingRuleTargets(String writeTargets, LoggingRule rule)
+   at NLog.Config.LoggingConfigurationParser.ParseRuleElement(ILoggingConfigurationElement loggerElement)
+   at NLog.Config.LoggingConfigurationParser.ParseRulesElement(ILoggingConfigurationElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.LoggingConfigurationParser.LoadConfig(ILoggingConfigurationElement nlogConfig, String basePath)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(ILoggingConfigurationElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2019-04-27 07:23:13.3930 Warn Failed loading config from C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\nlog.config. Invalid XML?
+2019-04-27 07:23:13.3930 Info Closing old configuration.
+2019-04-27 07:23:13.4250 Info Found 23 configuration items
+2019-04-27 07:23:15.3132 Info Shutdown() called. Logger closing...
+2019-04-27 07:23:15.3132 Info Closing old configuration.
+2019-04-27 07:23:15.3322 Info Logger has been closed down.
+2019-04-27 07:23:15.3322 Info AppDomain Shutting down. Logger closing...
+2019-04-27 07:23:15.3419 Info Logger has been shut down.
+2019-04-27 07:25:56.0273 Info Message Template Auto Format enabled
+2019-04-27 07:25:56.0546 Info Loading assembly: NLog.Web.AspNetCore
+2019-04-27 07:25:56.3063 Info Adding target FileTarget(Name=allfile)
+2019-04-27 07:25:56.5347 Error Parsing configuration from C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\bin\Debug\netcoreapp2.2\nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\bin\Debug\netcoreapp2.2\nlog.config.  ---> NLog.NLogConfigurationException: Target 'ownFile-web' not found for logging rule: *.
+   at NLog.Config.LoggingConfigurationParser.ParseLoggingRuleTargets(String writeTargets, LoggingRule rule)
+   at NLog.Config.LoggingConfigurationParser.ParseRuleElement(ILoggingConfigurationElement loggerElement)
+   at NLog.Config.LoggingConfigurationParser.ParseRulesElement(ILoggingConfigurationElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.LoggingConfigurationParser.LoadConfig(ILoggingConfigurationElement nlogConfig, String basePath)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(ILoggingConfigurationElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2019-04-27 07:25:56.5347 Warn Failed loading config from C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\bin\Debug\netcoreapp2.2\nlog.config. Invalid XML?
+2019-04-27 07:25:56.6586 Info Found 23 configuration items
+2019-04-27 07:26:01.0371 Info Configuring from an XML element in C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\nlog.config...
+2019-04-27 07:26:01.0952 Info Message Template Auto Format enabled
+2019-04-27 07:26:01.0952 Info Loading assembly: NLog.Web.AspNetCore
+2019-04-27 07:26:01.0952 Info Adding target FileTarget(Name=allfile)
+2019-04-27 07:26:01.0952 Error Parsing configuration from C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\nlog.config.  ---> NLog.NLogConfigurationException: Target 'ownFile-web' not found for logging rule: *.
+   at NLog.Config.LoggingConfigurationParser.ParseLoggingRuleTargets(String writeTargets, LoggingRule rule)
+   at NLog.Config.LoggingConfigurationParser.ParseRuleElement(ILoggingConfigurationElement loggerElement)
+   at NLog.Config.LoggingConfigurationParser.ParseRulesElement(ILoggingConfigurationElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.LoggingConfigurationParser.LoadConfig(ILoggingConfigurationElement nlogConfig, String basePath)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(ILoggingConfigurationElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2019-04-27 07:26:01.2660 Warn Failed loading config from C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\nlog.config. Invalid XML?
+2019-04-27 07:26:01.2660 Info Closing old configuration.
+2019-04-27 07:26:01.3984 Info Found 23 configuration items
+2019-04-27 07:26:04.1970 Info Shutdown() called. Logger closing...
+2019-04-27 07:26:04.1970 Info Closing old configuration.
+2019-04-27 07:26:04.2266 Info Logger has been closed down.
+2019-04-27 07:26:04.2329 Info AppDomain Shutting down. Logger closing...
+2019-04-27 07:26:04.2474 Info Logger has been shut down.
+2019-04-27 07:26:40.9664 Info Message Template Auto Format enabled
+2019-04-27 07:26:40.9921 Info Loading assembly: NLog.Web.AspNetCore
+2019-04-27 07:26:41.0956 Info Adding target FileTarget(Name=allfile)
+2019-04-27 07:26:41.2075 Error Parsing configuration from C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\bin\Debug\netcoreapp2.2\nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\bin\Debug\netcoreapp2.2\nlog.config.  ---> NLog.NLogConfigurationException: Target 'ownFile-web' not found for logging rule: *.
+   at NLog.Config.LoggingConfigurationParser.ParseLoggingRuleTargets(String writeTargets, LoggingRule rule)
+   at NLog.Config.LoggingConfigurationParser.ParseRuleElement(ILoggingConfigurationElement loggerElement)
+   at NLog.Config.LoggingConfigurationParser.ParseRulesElement(ILoggingConfigurationElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.LoggingConfigurationParser.LoadConfig(ILoggingConfigurationElement nlogConfig, String basePath)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(ILoggingConfigurationElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2019-04-27 07:26:41.2075 Warn Failed loading config from C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\bin\Debug\netcoreapp2.2\nlog.config. Invalid XML?
+2019-04-27 07:26:41.2657 Info Found 23 configuration items
+2019-04-27 07:26:42.0069 Info Configuring from an XML element in C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\nlog.config...
+2019-04-27 07:26:42.0069 Info Message Template Auto Format enabled
+2019-04-27 07:26:42.0069 Info Loading assembly: NLog.Web.AspNetCore
+2019-04-27 07:26:42.0069 Info Adding target FileTarget(Name=allfile)
+2019-04-27 07:26:42.0144 Error Parsing configuration from C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\nlog.config.  ---> NLog.NLogConfigurationException: Target 'ownFile-web' not found for logging rule: *.
+   at NLog.Config.LoggingConfigurationParser.ParseLoggingRuleTargets(String writeTargets, LoggingRule rule)
+   at NLog.Config.LoggingConfigurationParser.ParseRuleElement(ILoggingConfigurationElement loggerElement)
+   at NLog.Config.LoggingConfigurationParser.ParseRulesElement(ILoggingConfigurationElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.LoggingConfigurationParser.LoadConfig(ILoggingConfigurationElement nlogConfig, String basePath)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(ILoggingConfigurationElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2019-04-27 07:26:42.0144 Warn Failed loading config from C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\nlog.config. Invalid XML?
+2019-04-27 07:26:42.0144 Info Closing old configuration.
+2019-04-27 07:26:42.0514 Info Found 23 configuration items
+2019-04-27 07:32:15.6295 Info Message Template Auto Format enabled
+2019-04-27 07:32:15.6754 Info Loading assembly: NLog.Web.AspNetCore
+2019-04-27 07:32:16.0006 Info Adding target FileTarget(Name=allfile)
+2019-04-27 07:32:16.1815 Error Parsing configuration from C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\bin\Debug\netcoreapp2.2\nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\bin\Debug\netcoreapp2.2\nlog.config.  ---> NLog.NLogConfigurationException: Target 'ownFile-web' not found for logging rule: *.
+   at NLog.Config.LoggingConfigurationParser.ParseLoggingRuleTargets(String writeTargets, LoggingRule rule)
+   at NLog.Config.LoggingConfigurationParser.ParseRuleElement(ILoggingConfigurationElement loggerElement)
+   at NLog.Config.LoggingConfigurationParser.ParseRulesElement(ILoggingConfigurationElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.LoggingConfigurationParser.LoadConfig(ILoggingConfigurationElement nlogConfig, String basePath)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(ILoggingConfigurationElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2019-04-27 07:32:16.1936 Warn Failed loading config from C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\bin\Debug\netcoreapp2.2\nlog.config. Invalid XML?
+2019-04-27 07:32:16.2547 Info Found 23 configuration items
+2019-04-27 07:32:17.6720 Info Configuring from an XML element in C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\nlog.config...
+2019-04-27 07:32:17.6720 Info Message Template Auto Format enabled
+2019-04-27 07:32:17.6720 Info Loading assembly: NLog.Web.AspNetCore
+2019-04-27 07:32:17.6971 Info Adding target FileTarget(Name=allfile)
+2019-04-27 07:32:17.6971 Error Parsing configuration from C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\nlog.config failed. Exception: NLog.NLogConfigurationException: Exception when parsing C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\nlog.config.  ---> NLog.NLogConfigurationException: Target 'ownFile-web' not found for logging rule: *.
+   at NLog.Config.LoggingConfigurationParser.ParseLoggingRuleTargets(String writeTargets, LoggingRule rule)
+   at NLog.Config.LoggingConfigurationParser.ParseRuleElement(ILoggingConfigurationElement loggerElement)
+   at NLog.Config.LoggingConfigurationParser.ParseRulesElement(ILoggingConfigurationElement rulesElement, IList`1 rulesCollection)
+   at NLog.Config.LoggingConfigurationParser.LoadConfig(ILoggingConfigurationElement nlogConfig, String basePath)
+   at NLog.Config.XmlLoggingConfiguration.ParseNLogElement(ILoggingConfigurationElement nlogElement, String filePath, Boolean autoReloadDefault)
+   at NLog.Config.XmlLoggingConfiguration.Initialize(XmlReader reader, String fileName, Boolean ignoreErrors)
+   --- End of inner exception stack trace ---
+2019-04-27 07:32:17.7029 Warn Failed loading config from C:\Users\docs\source\repos\CleanArchitecture.API.Template\src\Api.Template.WebApi\nlog.config. Invalid XML?
+2019-04-27 07:32:17.7029 Info Closing old configuration.
+2019-04-27 07:32:17.7455 Info Found 23 configuration items

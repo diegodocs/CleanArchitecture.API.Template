@@ -12,7 +12,6 @@ namespace Api.Common.Cqrs.Core.Bus
         }
 
         public Guid MessageId { get; protected set; }
-        public Guid AuditUserId { get; set; }
         public string MessageType { get; protected set; }
         public DateTime MessageCreatedDate { get; protected set; }
 

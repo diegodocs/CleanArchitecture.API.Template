@@ -26,8 +26,7 @@ namespace Api.Template.Domain.CommandHandlers.Funds
                 var fund = new Fund
                 {
                     Name = command.Name,
-                    Description = command.Description,
-                    AuditUserId = command.AuditUserId                
+                    Description = command.Description               
                 };
 
                 //Persistence
