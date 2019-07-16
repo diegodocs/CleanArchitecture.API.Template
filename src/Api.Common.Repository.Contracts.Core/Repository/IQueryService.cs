@@ -1,7 +1,7 @@
+using Api.Common.Repository.Contracts.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using Api.Common.Repository.Contracts.Core.Entities;
 
 namespace Api.Common.Repository.Contracts.Core.Repository
 {

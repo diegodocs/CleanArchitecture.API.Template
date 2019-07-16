@@ -1,5 +1,6 @@
-﻿using Autofac;
-using Api.Template.Integration.Tests.Factories;
+﻿using Api.Template.Integration.Tests.Factories.Interface;
+using Api.Template.Integration.Tests.IntegrationTests;
+using Autofac;
 
 namespace Api.Template.Integration.Tests.InjectionModules
 {
@@ -7,7 +8,9 @@ namespace Api.Template.Integration.Tests.InjectionModules
     {
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<FundControllerFactory>().AsSelf();          
+            builder.RegisterAssemblyTypes(typeof(BaseControllerTest).Assembly)
+                .Where(c => c.IsAssignableTo<IBaseIntegrationTestFactory>())
+                .AsSelf();
         }
     }
 }

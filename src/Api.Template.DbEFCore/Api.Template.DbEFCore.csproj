@@ -1,46 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Library</OutputType>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    <LangVersion>7.2</LangVersion>
-    <ApplicationIcon />
-    <StartupObject />
+    <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Remove="Migrations\20180914190843_Adding_ReconciliationSupportDocument.cs" />
-    <Compile Remove="Migrations\20180917133141_SupportDocuments.cs" />
-    <Compile Remove="Migrations\20180917140430_SupportDocuments.cs" />
-    <Compile Remove="Migrations\20180917140649_supportdocuments.cs" />
-    <Compile Remove="Migrations\20180917142350_AddSupportDocument.cs" />
-    <Compile Remove="Migrations\20180917142934_AddSupportDocuments.cs" />
-    <Compile Remove="Migrations\20180917143145_setnull.cs" />
-    <Compile Remove="Migrations\20180917145226_al.cs" />
-    <Compile Remove="Migrations\20180917155812_AddSupportDocumentMap.cs" />
-    <Compile Remove="Migrations\20181008172646_Adding AccountSupportDocumentMap.cs" />
-    <Compile Remove="Migrations\20181008185130_asd.cs" />
-    <Compile Remove="Migrations\20181009172305_NotAppliedChanges.cs" />
-    <Compile Remove="Migrations\20181009172339_AddingSupportDocumentMap.cs" />
-    <Compile Remove="Migrations\20181009173032_InsertingSupportDocumentMapData.cs" />
-    <Compile Remove="Migrations\20181011162130_mig.cs" />
-    <Compile Remove="Migrations\20181122154002_AddSegmentColumnOnAccounTable.cs" />
-    <Compile Remove="Migrations\20181123111840_RemovinAccountNumberFromAccountsTable.cs" />
-    <Compile Remove="Migrations\20181211134747_AddingColumnOnAccountTable.cs" />
-    <Compile Remove="Migrations\20181210192915_AddingBooleanColumnsToAccount.cs" />
-    <Compile Remove="Migrations\20181228181332_AddingAccunConfiguratinTable.cs" />
-    <Compile Remove="Migrations\20181228181551_AddingAccountConfigurationTable.cs" />
-    <Compile Remove="Migrations\20181228182402_AddingAccountConfigurationTable.cs" />
-    <Compile Remove="Migrations\20181228182927_AddingAccountConfigurationTable.cs" />
-    <Compile Remove="Migrations\20181228183055_AddigAccountConfigurationTable.cs" />
-    <Compile Remove="Migrations\20190104134915_AddingAccountToOOS.cs" />
-    <Compile Remove="Migrations\20190201175138_AddingDecimalPlacesToTransactins.cs" />
-    <Compile Remove="Migrations\20190201192831_AddingDataType.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="appsettings.json" />
-  </ItemGroup>
 
   <ItemGroup>
     <Content Include="appsettings.json">
@@ -52,19 +15,21 @@
   <ItemGroup>
     <PackageReference Include="Binbin.Linq.PredicateBuilder" Version="2.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.4" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.4">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="2.2.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Api.Common.Repository.Contracts.Core\Api.Common.Repository.Contracts.Core.csproj" />
     <ProjectReference Include="..\Api.Template.Domain\Api.Template.Domain.csproj" />
-    <ProjectReference Include="..\Api.Common.Repository.EFCore\Api.Common.Repository.EFCore.csproj" />
   </ItemGroup>
 
 </Project>

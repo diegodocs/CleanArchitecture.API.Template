@@ -1,6 +1,6 @@
-﻿using AutoMapper;
-using Api.Template.ApplicationService.ViewModels;
+﻿using Api.Template.ApplicationService.ViewModels;
 using Api.Template.Domain.Models;
+using AutoMapper;
 
 namespace Api.Template.ApplicationService.Mappings
 {
@@ -8,8 +8,7 @@ namespace Api.Template.ApplicationService.Mappings
     {
         public DomainToViewModelMapping()
         {
-            CreateMap<Fund, FundViewModel>();           
-            CreateMap<User, UserViewModel>();
+            CreateMap<ReleaseCallStatus, ReleaseCallStatusViewModel>();
         }
     }
 }

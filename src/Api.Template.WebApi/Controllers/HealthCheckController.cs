@@ -1,19 +1,18 @@
-﻿using System;
-using System.Net;
-using System.Threading.Tasks;
-using Api.Template.ApplicationService.Interfaces;
-using Api.Template.Domain.Models;
+﻿using Api.Template.ApplicationService.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System;
+using System.Net;
+using System.Threading.Tasks;
 
-namespace Api.Template.WebApi.Controllers
-{    
+namespace Api.Template.CI.WebApi.Controllers
+{
     public class HealthCheckController : BaseController
     {
-        private readonly IUserAppService appService;
+        private readonly IReleaseCallStatusAppService appService;
         private readonly ILogger<HealthCheckController> logger;
 
-        public HealthCheckController(IUserAppService appService,
+        public HealthCheckController(IReleaseCallStatusAppService appService,
             ILogger<HealthCheckController> logger)
         {
             this.appService = appService;
@@ -34,8 +33,7 @@ namespace Api.Template.WebApi.Controllers
                 {
                     const string message = "HealthCheck Status OK";
                     //validate Database Connection (read method)
-                    User user = new UserDefinition().SystemAppUser;
-                    appService.GetById(user.Id);
+                    appService.GetAll();
 
                     logger.LogInformation(message);
 

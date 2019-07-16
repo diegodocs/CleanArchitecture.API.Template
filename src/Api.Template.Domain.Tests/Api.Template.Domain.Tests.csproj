@@ -1,17 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    <RootNamespace>Api.Template.Domain.Tests</RootNamespace>
-    <LangVersion>7.2</LangVersion>
-    <ApplicationIcon />
-    <OutputType>Library</OutputType>
-    <StartupObject />
+    <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="appsettings.json" />
-  </ItemGroup>
 
   <ItemGroup>
     <Content Include="appsettings.json">
@@ -22,11 +14,14 @@
 
   <ItemGroup>
     <PackageReference Include="Autofac" Version="4.9.2" />
-    <PackageReference Include="FluentAssertions" Version="5.5.3" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.0.0-preview.18572.1" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.0.1" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
-    <PackageReference Include="NUnit" Version="3.11.0" />
+    <PackageReference Include="coverlet.msbuild" Version="2.6.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="FluentAssertions" Version="5.7.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.1.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="NUnit" Version="3.12.0" />
     <PackageReference Include="NUnit.Console" Version="3.10.0" />
     <PackageReference Include="NUnit.ConsoleRunner" Version="3.10.0" />
     <PackageReference Include="NUnit.Runners" Version="3.10.0" />
@@ -36,8 +31,11 @@
   <ItemGroup>
     <ProjectReference Include="..\Api.Template.ApplicationService\Api.Template.ApplicationService.csproj" />
     <ProjectReference Include="..\Api.Template.Domain\Api.Template.Domain.csproj" />
-    <ProjectReference Include="..\Api.Template.Mock.Infrastructure\Api.Common.Mock.Infrastructure.csproj" />
-    <ProjectReference Include="..\Api.Common.Repository.Contracts.Core\Api.Common.Repository.Contracts.Core.csproj" />
+    <ProjectReference Include="..\Api.Common.Mock.Infrastructure\Api.Common.Mock.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
   </ItemGroup>
 
 </Project>

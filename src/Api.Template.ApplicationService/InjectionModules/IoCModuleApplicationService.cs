@@ -1,8 +1,8 @@
-﻿using Autofac;
-using Api.Template.ApplicationService.InjectionModules;
-using Api.Template.ApplicationService.Services;
-using Api.Template.Domain.Models;
+﻿using Api.Template.ApplicationService.Services;
 using Api.Common.WebServer.Server;
+using Autofac;
+using System.Reflection;
+using Module = Autofac.Module;
 
 namespace Api.Template.Domain.InjectionModules
 {
@@ -13,13 +13,13 @@ namespace Api.Template.Domain.InjectionModules
             //Domain Modules: Command and CommandHandlers
             builder.RegisterModule<IoCModuleDomain>();
 
-            var assemblyToScan = System.Reflection.Assembly.GetAssembly(typeof(BaseAppService));
+            var assemblyToScan = Assembly.GetAssembly(typeof(BaseAppService));
 
             builder
                 .RegisterAssemblyTypes(assemblyToScan)
                 .Where(c => c.IsClass
-                    && c.IsInNamespace("Api.Template.ApplicationService.Services")).AsImplementedInterfaces();
-                        
+                            && c.IsInNamespace("Api.Template.ApplicationService.Services")).AsImplementedInterfaces();
+
             builder.RegisterType<UserContext>().AsSelf();
         }
     }

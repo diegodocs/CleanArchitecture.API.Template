@@ -1,28 +1,28 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    <LangVersion>7.2</LangVersion>
+    <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Remove="Database\**" />
-    <EmbeddedResource Remove="Database\**" />
-    <None Remove="Database\**" />
-  </ItemGroup>
-
+  
   <ItemGroup>
     <PackageReference Include="Autofac" Version="4.9.2" />
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.4.0" />
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.9.1" />
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
-    <PackageReference Include="Simple.OData.Client" Version="5.6.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="NS.HtmlToOpenXml" Version="1.1.0" />
+    <PackageReference Include="WindowsAzure.Storage" Version="9.3.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Api.Template.Mock.Infrastructure\Api.Common.Mock.Infrastructure.csproj" />
-    <ProjectReference Include="..\Api.Common.Cqrs.Core\Api.Common.Cqrs.Core.csproj" />
-    <ProjectReference Include="..\Api.Common.Repository.Contracts.Core\Api.Common.Repository.Contracts.Core.csproj" />
+    <ProjectReference Include="..\Api.Common.Repository.EFCore\Api.Common.Repository.EFCore.csproj" />
     <ProjectReference Include="..\Api.Template.DbEFCore\Api.Template.DbEFCore.csproj" />
+    <ProjectReference Include="..\Api.Common.Mock.Infrastructure\Api.Common.Mock.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>

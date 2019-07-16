@@ -3,7 +3,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:5202",
+      "applicationUrl": "http://localhost:5200",
       "sslPort": 0
     }
   },
@@ -15,22 +15,14 @@
         "ASPNETCORE_ENVIRONMENT": "Local"
       }
     },
-    "WebApi": {
+    "Standalone WebApi": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Local"
       },
-      "applicationUrl": "http://localhost:5201"
-    },
-    "Docker": {
-      "commandName": "Docker",
-      "launchBrowser": true,
-      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
-      "httpPort": 5202,
-      "useSSL": false,
-      "sslPort": 0
+      "applicationUrl": "http://localhost:5200/"
     }
   }
 }

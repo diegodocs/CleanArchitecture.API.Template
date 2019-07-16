@@ -1,8 +1,7 @@
-﻿using System.Runtime.Serialization;
+﻿using System.Reflection;
 
 namespace Api.Common.WebServer.Server
 {
-    [DataContract]
     public class ApiResponse
     {
         public ApiResponse(int statusCode, string message = "", object result = null, ApiError apiError = null)
@@ -10,15 +9,14 @@ namespace Api.Common.WebServer.Server
             StatusCode = statusCode;
             Message = message;
             Result = result;
-            ResponseException = apiError;            
+            ResponseException = apiError;
         }
 
-        [DataMember] public int StatusCode { get; set; }
+        public int StatusCode { get; set; }
+        public string Message { get; set; }
+        public ApiError ResponseException { get; set; }
+        public object Result { get; set; }
 
-        [DataMember] public string Message { get; set; }
-
-        [DataMember(EmitDefaultValue = false)] public ApiError ResponseException { get; set; }
-
-        [DataMember(EmitDefaultValue = false)] public object Result { get; set; }
+        public string Version { get { return Assembly.GetEntryAssembly().GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion?.ToString(); } }
     }
 }

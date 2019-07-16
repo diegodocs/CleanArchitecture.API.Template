@@ -1,5 +1,5 @@
-﻿using System.Threading.Tasks;
-using Api.Common.Repository.Contracts.Core.Entities;
+﻿using Api.Common.Repository.Contracts.Core.Entities;
+using System.Threading.Tasks;
 
 namespace Api.Common.Cqrs.Core.Commands
 {

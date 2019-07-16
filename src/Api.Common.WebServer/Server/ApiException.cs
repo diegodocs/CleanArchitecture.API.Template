@@ -23,6 +23,18 @@ namespace Api.Common.WebServer.Server
             StatusCode = statusCode;
         }
 
+        public ApiException(string message) : base(message)
+        {
+        }
+
+        public ApiException(string message, Exception innerException) : base(message, innerException)
+        {
+        }
+
+        public ApiException() : base()
+        {
+        }
+
         public int StatusCode { get; set; }
 
         public IEnumerable<ValidationError> Errors { get; set; }

@@ -1,6 +1,6 @@
-﻿using Autofac;
+﻿using Api.Template.ApplicationService.Mappings;
+using Autofac;
 using AutoMapper;
-using Api.Template.ApplicationService.Mappings;
 
 namespace Api.Template.ApplicationService.InjectionModules
 {
@@ -9,10 +9,7 @@ namespace Api.Template.ApplicationService.InjectionModules
         protected override void Load(ContainerBuilder builder)
         {
             builder.Register(
-                    context => new MapperConfiguration(cfg =>
-                    {
-                        cfg.AddProfile(new DomainToViewModelMapping());                        
-                    }))
+                    context => new MapperConfiguration(cfg => { cfg.AddProfile(new DomainToViewModelMapping()); }))
                 .AsSelf().SingleInstance();
 
             builder.Register(

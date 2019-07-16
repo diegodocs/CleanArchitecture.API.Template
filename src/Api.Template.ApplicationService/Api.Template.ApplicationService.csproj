@@ -1,24 +1,20 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    <LangVersion>7.2</LangVersion>
-  </PropertyGroup>
+    <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
+  </PropertyGroup>  
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <Optimize>false</Optimize>
-  </PropertyGroup>
-
-  <ItemGroup>
+  <ItemGroup>   
     <PackageReference Include="Autofac" Version="4.9.2" />
-    <PackageReference Include="AutoMapper" Version="8.1.0" />
+    <PackageReference Include="AutoMapper" Version="8.1.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Api.Template.DbEFCore\Api.Template.DbEFCore.csproj" />
-    <ProjectReference Include="..\Api.Common.Cqrs.Core\Api.Common.Cqrs.Core.csproj" />
-    <ProjectReference Include="..\Api.Template.Domain\Api.Template.Domain.csproj" />
     <ProjectReference Include="..\Api.Common.WebServer\Api.Common.WebServer.csproj" />
+    <ProjectReference Include="..\Api.Template.DbEFCore\Api.Template.DbEFCore.csproj" />
+    <ProjectReference Include="..\Api.Template.Domain\Api.Template.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,10 +1,10 @@
-﻿using System.Threading.Tasks;
-using Autofac;
-using Api.Common.Cqrs.Core.Bus;
+﻿using Api.Common.Cqrs.Core.Bus;
 using Api.Common.Cqrs.Core.CommandHandlers;
 using Api.Common.Cqrs.Core.Commands;
 using Api.Common.Cqrs.Core.Events;
 using Api.Common.Repository.Contracts.Core.Entities;
+using Autofac;
+using System.Threading.Tasks;
 
 namespace Api.Template.Infrastructure.Bus
 {

@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
+using Microsoft.Extensions.Configuration;
 
 namespace Api.Template.DbEFCore.Repositories
 {
@@ -7,14 +8,17 @@ namespace Api.Template.DbEFCore.Repositories
     {
         public EfCoreDbContext CreateDbContext(string[] args)
         {
-            var builder = new DbContextOptionsBuilder<EfCoreDbContext>();
+            var builder = new ConfigurationBuilder()
+                .AddJsonFile("appsettings.json", false, true)
+                .AddEnvironmentVariables();
 
-            var connectionString =
-                @"Data Source=(LocalDB)\MSSQLLocalDB;Database=Api.Template_LOCAL;Trusted_Connection=yes;";
+            var configuration = builder.Build();
 
-            builder.UseSqlServer(connectionString);
+            var context = new DbContextOptionsBuilder<EfCoreDbContext>();
 
-            return new EfCoreDbContext(builder.Options);
+            context.UseSqlServer(configuration.GetConnectionString("ApiDbConnection"));
+
+            return new EfCoreDbContext(context.Options);
         }
     }
 }

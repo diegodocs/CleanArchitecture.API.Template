@@ -1,27 +1,20 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    <LangVersion>7.2</LangVersion>
-  </PropertyGroup>
+    <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
+  </PropertyGroup> 
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <Optimize>false</Optimize>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Remove="Contract\**" />
-    <EmbeddedResource Remove="Contract\**" />
-    <None Remove="Contract\**" />
-  </ItemGroup>
-
-  <ItemGroup>
+  <ItemGroup>    
     <PackageReference Include="Autofac" Version="4.9.2" />
-  </ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="2.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.4.0" />
+  </ItemGroup> 
 
   <ItemGroup>
     <ProjectReference Include="..\Api.Common.Cqrs.Core\Api.Common.Cqrs.Core.csproj" />
     <ProjectReference Include="..\Api.Common.Repository.Contracts.Core\Api.Common.Repository.Contracts.Core.csproj" />
   </ItemGroup>
-
+  
 </Project>

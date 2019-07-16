@@ -1,15 +1,12 @@
-﻿using Autofac.Extensions.DependencyInjection;
-using Api.Template.WebApi.Server;
+﻿using Api.Template.WebApi.Server;
+using Autofac.Extensions.DependencyInjection;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Hosting.WindowsServices;
 using Microsoft.Extensions.Configuration;
+using Serilog;
 using System;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using NLog;
-using NLog.Web;
 
 namespace Api.Template.WebApi
 {
@@ -17,54 +14,30 @@ namespace Api.Template.WebApi
     {
         public static void Main(string[] args)
         {
-            var logger = NLogBuilder.ConfigureNLog("nlog.config").GetCurrentClassLogger();
-
             try
             {
                 var builder = new ConfigurationBuilder();
                 builder.AddCommandLine(args);
 
                 var config = builder.Build();
-
-                var isWindowService = (!Debugger.IsAttached || args.Contains("--windowsservice"));
                 var pathToContentRoot = Directory.GetCurrentDirectory();
-                
-                if (isWindowService)
-                {
-                    var pathToExe = Process.GetCurrentProcess().MainModule.FileName;
-                    pathToContentRoot = Path.GetDirectoryName(pathToExe);
 
-                    var host = WebHost.CreateDefaultBuilder(args)
-                        .UseKestrel()
-                        .UseConfiguration(config)
-                        .ConfigureServices(s => s.AddAutofac())
-                        .UseContentRoot(pathToContentRoot)
-                        .UseStartup<Startup>()
-                        .UseNLog()
-                        .Build();
+                var webHostArgs = args.Where(arg => arg != "--console").ToArray();
 
-                    host.RunAsService();
-                }
-                else
-                {
-                    var host = WebHost.CreateDefaultBuilder(args)
-                        .UseConfiguration(config)
-                        .ConfigureServices(s => s.AddAutofac())
-                        .UseContentRoot(pathToContentRoot)
-                        .UseStartup<Startup>()
-                        .UseNLog()
-                        .Build();
+                var host = WebHost.CreateDefaultBuilder(webHostArgs)
+                         .UseConfiguration(config)
+                         .ConfigureServices(s => s.AddAutofac())
+                         .UseContentRoot(pathToContentRoot)
+                         .UseStartup<Startup>()
+                         .UseSerilog()
+                         .Build();
 
-                    host.Run();
-                }
+                host.Run();
+
             }
-            catch (Exception exception)
+            catch (Exception ex)
             {
-                logger.Error(exception, "Stopped program because of exception");
-            }
-            finally
-            {
-                LogManager.Shutdown();
+                Console.WriteLine($"Error: {ex}");
             }
         }
     }
