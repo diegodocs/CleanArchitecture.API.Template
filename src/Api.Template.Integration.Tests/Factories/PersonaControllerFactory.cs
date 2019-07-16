@@ -24,7 +24,7 @@ namespace Api.Template.Integration.Tests.Factories
 
         public async Task<PersonaViewModel> Create()
         {
-            var name = "Draft";
+            var name = "Student";
 
             //Act
             var responseModel = await Create(new CreatePersonaCommand(name));
