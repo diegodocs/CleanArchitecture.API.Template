@@ -716,7 +716,7 @@
           },
           "Branches": []
         },
-        "System.Void Api.Template.WebApi.V1.HealthCheckController::.ctor(Api.Template.ApplicationService.Interfaces.IReleaseCallStatusAppService,Microsoft.Extensions.Logging.ILogger`1<Api.Template.WebApi.V1.HealthCheckController>)": {
+        "System.Void Api.Template.WebApi.V1.HealthCheckController::.ctor(Api.Template.ApplicationService.Interfaces.IPersonaAppService,Microsoft.Extensions.Logging.ILogger`1<Api.Template.WebApi.V1.HealthCheckController>)": {
           "Lines": {
             "15": 0,
             "16": 0,
@@ -1665,7 +1665,7 @@
             }
           ]
         },
-        "Microsoft.AspNetCore.Mvc.IActionResult Api.Template.WebApi.V1.ReleaseCallController::ReleaseCallStatusAction(Api.Template.Domain.Commands.ReleaseCalls.PopulateReleaseCallStatusActionCommand)": {
+        "Microsoft.AspNetCore.Mvc.IActionResult Api.Template.WebApi.V1.ReleaseCallController::PersonaAction(Api.Template.Domain.Commands.ReleaseCalls.PopulatePersonaActionCommand)": {
           "Lines": {
             "351": 9,
             "352": 9,
@@ -1712,7 +1712,7 @@
             }
           ]
         },
-        "Microsoft.AspNetCore.Mvc.IActionResult Api.Template.WebApi.V1.ReleaseCallController::UpdateReleaseCallStatusId(Api.Template.Domain.Commands.ReleaseCalls.UpdateReleaseCallStatusIdCommand)": {
+        "Microsoft.AspNetCore.Mvc.IActionResult Api.Template.WebApi.V1.ReleaseCallController::UpdatePersonaId(Api.Template.Domain.Commands.ReleaseCalls.UpdatePersonaIdCommand)": {
           "Lines": {
             "366": 164,
             "367": 164,
@@ -2874,9 +2874,9 @@
         }
       }
     },
-    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.PortalRH.WebApi\\V1\\ReleaseCallStatusController.cs": {
-      "Api.Template.WebApi.V1.ReleaseCallStatusController": {
-        "Microsoft.AspNetCore.Mvc.IActionResult Api.Template.WebApi.V1.ReleaseCallStatusController::Get()": {
+    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.PortalRH.WebApi\\V1\\PersonaController.cs": {
+      "Api.Template.WebApi.V1.PersonaController": {
+        "Microsoft.AspNetCore.Mvc.IActionResult Api.Template.WebApi.V1.PersonaController::Get()": {
           "Lines": {
             "24": 0,
             "25": 0,
@@ -2884,7 +2884,7 @@
           },
           "Branches": []
         },
-        "Microsoft.AspNetCore.Mvc.IActionResult Api.Template.WebApi.V1.ReleaseCallStatusController::Get(System.Guid)": {
+        "Microsoft.AspNetCore.Mvc.IActionResult Api.Template.WebApi.V1.PersonaController::Get(System.Guid)": {
           "Lines": {
             "35": 5,
             "36": 5,
@@ -2892,7 +2892,7 @@
           },
           "Branches": []
         },
-        "Microsoft.AspNetCore.Mvc.IActionResult Api.Template.WebApi.V1.ReleaseCallStatusController::Get(System.String)": {
+        "Microsoft.AspNetCore.Mvc.IActionResult Api.Template.WebApi.V1.PersonaController::Get(System.String)": {
           "Lines": {
             "46": 0,
             "47": 0,
@@ -2900,7 +2900,7 @@
           },
           "Branches": []
         },
-        "Microsoft.AspNetCore.Mvc.IActionResult Api.Template.WebApi.V1.ReleaseCallStatusController::Post(Api.Template.Domain.Commands.ReleaseCallsStatus.CreateReleaseCallStatusCommand)": {
+        "Microsoft.AspNetCore.Mvc.IActionResult Api.Template.WebApi.V1.PersonaController::Post(Api.Template.Domain.Commands.ReleaseCallsStatus.CreatePersonaCommand)": {
           "Lines": {
             "57": 4,
             "58": 4,
@@ -2908,7 +2908,7 @@
           },
           "Branches": []
         },
-        "Microsoft.AspNetCore.Mvc.IActionResult Api.Template.WebApi.V1.ReleaseCallStatusController::Delete(System.Guid)": {
+        "Microsoft.AspNetCore.Mvc.IActionResult Api.Template.WebApi.V1.PersonaController::Delete(System.Guid)": {
           "Lines": {
             "68": 2,
             "69": 2,
@@ -2917,7 +2917,7 @@
           },
           "Branches": []
         },
-        "Microsoft.AspNetCore.Mvc.IActionResult Api.Template.WebApi.V1.ReleaseCallStatusController::Update(System.Guid,Api.Template.Domain.Commands.ReleaseCallsStatus.UpdateReleaseCallStatusCommand)": {
+        "Microsoft.AspNetCore.Mvc.IActionResult Api.Template.WebApi.V1.PersonaController::Update(System.Guid,Api.Template.Domain.Commands.ReleaseCallsStatus.UpdatePersonaCommand)": {
           "Lines": {
             "80": 2,
             "81": 2,
@@ -2925,7 +2925,7 @@
           },
           "Branches": []
         },
-        "System.Void Api.Template.WebApi.V1.ReleaseCallStatusController::.ctor(Api.Template.ApplicationService.Interfaces.IReleaseCallStatusAppService)": {
+        "System.Void Api.Template.WebApi.V1.PersonaController::.ctor(Api.Template.ApplicationService.Interfaces.IPersonaAppService)": {
           "Lines": {
             "12": 13,
             "13": 13,
@@ -4416,7 +4416,7 @@
           },
           "Branches": []
         },
-        "System.Guid Api.Template.ApplicationService.ViewModels.CommercialListViewModel::get_ReleaseCallStatusId()": {
+        "System.Guid Api.Template.ApplicationService.ViewModels.CommercialListViewModel::get_PersonaId()": {
           "Lines": {
             "32": 0
           },
@@ -4576,7 +4576,7 @@
           },
           "Branches": []
         },
-        "System.Guid Api.Template.ApplicationService.ViewModels.ConsultantViewRelease::get_ReleaseCallStatusId()": {
+        "System.Guid Api.Template.ApplicationService.ViewModels.ConsultantViewRelease::get_PersonaId()": {
           "Lines": {
             "16": 120
           },
@@ -5426,7 +5426,7 @@
           },
           "Branches": []
         },
-        "System.Guid Api.Template.ApplicationService.ViewModels.ManagerViewReleaseCall::get_ReleaseCallStatusId()": {
+        "System.Guid Api.Template.ApplicationService.ViewModels.ManagerViewReleaseCall::get_PersonaId()": {
           "Lines": {
             "16": 120
           },
@@ -5916,39 +5916,39 @@
         }
       }
     },
-    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.ApplicationService\\ViewModels\\ReleaseCallStatusActionViewModel.cs": {
-      "Api.Template.ApplicationService.ViewModels.ReleaseCallStatusActionViewModel": {
-        "System.Guid Api.Template.ApplicationService.ViewModels.ReleaseCallStatusActionViewModel::get_ReleaseCallId()": {
+    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.ApplicationService\\ViewModels\\PersonaActionViewModel.cs": {
+      "Api.Template.ApplicationService.ViewModels.PersonaActionViewModel": {
+        "System.Guid Api.Template.ApplicationService.ViewModels.PersonaActionViewModel::get_ReleaseCallId()": {
           "Lines": {
             "8": 35
           },
           "Branches": []
         },
-        "System.String Api.Template.ApplicationService.ViewModels.ReleaseCallStatusActionViewModel::get_Comments()": {
+        "System.String Api.Template.ApplicationService.ViewModels.PersonaActionViewModel::get_Comments()": {
           "Lines": {
             "9": 44
           },
           "Branches": []
         },
-        "System.Guid Api.Template.ApplicationService.ViewModels.ReleaseCallStatusActionViewModel::get_ReleaseCallStatusId()": {
+        "System.Guid Api.Template.ApplicationService.ViewModels.PersonaActionViewModel::get_PersonaId()": {
           "Lines": {
             "10": 35
           },
           "Branches": []
         },
-        "System.Int32 Api.Template.ApplicationService.ViewModels.ReleaseCallStatusActionViewModel::get_SecurityUserId()": {
+        "System.Int32 Api.Template.ApplicationService.ViewModels.PersonaActionViewModel::get_SecurityUserId()": {
           "Lines": {
             "11": 34
           },
           "Branches": []
         },
-        "System.DateTime Api.Template.ApplicationService.ViewModels.ReleaseCallStatusActionViewModel::get_CreateDate()": {
+        "System.DateTime Api.Template.ApplicationService.ViewModels.PersonaActionViewModel::get_CreateDate()": {
           "Lines": {
             "12": 35
           },
           "Branches": []
         },
-        "System.DateTime Api.Template.ApplicationService.ViewModels.ReleaseCallStatusActionViewModel::get_ModifiedDate()": {
+        "System.DateTime Api.Template.ApplicationService.ViewModels.PersonaActionViewModel::get_ModifiedDate()": {
           "Lines": {
             "13": 35
           },
@@ -5956,9 +5956,9 @@
         }
       }
     },
-    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.ApplicationService\\ViewModels\\ReleaseCallStatusViewModel.cs": {
-      "Api.Template.ApplicationService.ViewModels.ReleaseCallStatusViewModel": {
-        "System.String Api.Template.ApplicationService.ViewModels.ReleaseCallStatusViewModel::get_Name()": {
+    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.ApplicationService\\ViewModels\\PersonaViewModel.cs": {
+      "Api.Template.ApplicationService.ViewModels.PersonaViewModel": {
+        "System.String Api.Template.ApplicationService.ViewModels.PersonaViewModel::get_Name()": {
           "Lines": {
             "5": 47
           },
@@ -6302,7 +6302,7 @@
           },
           "Branches": []
         },
-        "System.Guid Api.Template.ApplicationService.ViewModels.ReleaseCallViewModel::get_ReleaseCallStatusId()": {
+        "System.Guid Api.Template.ApplicationService.ViewModels.ReleaseCallViewModel::get_PersonaId()": {
           "Lines": {
             "48": 2173
           },
@@ -6452,7 +6452,7 @@
           },
           "Branches": []
         },
-        "Api.Template.ApplicationService.ViewModels.ReleaseCallStatusActionViewModel Api.Template.ApplicationService.ViewModels.ReleaseCallViewModel::get_ReleaseCallStatusAction()": {
+        "Api.Template.ApplicationService.ViewModels.PersonaActionViewModel Api.Template.ApplicationService.ViewModels.ReleaseCallViewModel::get_PersonaAction()": {
           "Lines": {
             "73": 931
           },
@@ -14108,7 +14108,7 @@
           },
           "Branches": []
         },
-        "Api.Template.ApplicationService.ViewModels.ReleaseCallStatusActionViewModel Api.Template.ApplicationService.Services.ReleaseCallAppService::PopulateReleaseCallStatusAction(Api.Template.Domain.Commands.ReleaseCalls.PopulateReleaseCallStatusActionCommand)": {
+        "Api.Template.ApplicationService.ViewModels.PersonaActionViewModel Api.Template.ApplicationService.Services.ReleaseCallAppService::PopulatePersonaAction(Api.Template.Domain.Commands.ReleaseCalls.PopulatePersonaActionCommand)": {
           "Lines": {
             "543": 9,
             "544": 9,
@@ -14140,7 +14140,7 @@
             }
           ]
         },
-        "Api.Template.ApplicationService.ViewModels.ReleaseCallViewModel Api.Template.ApplicationService.Services.ReleaseCallAppService::UpdateReleaseCallStatusId(Api.Template.Domain.Commands.ReleaseCalls.UpdateReleaseCallStatusIdCommand)": {
+        "Api.Template.ApplicationService.ViewModels.ReleaseCallViewModel Api.Template.ApplicationService.Services.ReleaseCallAppService::UpdatePersonaId(Api.Template.Domain.Commands.ReleaseCalls.UpdatePersonaIdCommand)": {
           "Lines": {
             "557": 164,
             "558": 164,
@@ -14335,7 +14335,7 @@
             }
           ]
         },
-        "Api.Template.ApplicationService.ViewModels.ReleaseCallStatusActionViewModel Api.Template.ApplicationService.Services.ReleaseCallAppService::LastRejectedComment(System.Guid)": {
+        "Api.Template.ApplicationService.ViewModels.PersonaActionViewModel Api.Template.ApplicationService.Services.ReleaseCallAppService::LastRejectedComment(System.Guid)": {
           "Lines": {
             "647": 0,
             "648": 0,
@@ -14577,7 +14577,7 @@
             }
           ]
         },
-        "System.Void Api.Template.ApplicationService.Services.ReleaseCallAppService::.ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Api.Common.Cqrs.Core.Bus.IMessageBus,AutoMapper.IMapper,Api.Common.Repository.Contracts.Core.Repository.IRepository`1<Api.Template.Domain.Models.HrTeam>,Api.Common.Repository.Contracts.Core.Repository.IRepository`1<Api.Template.Domain.Models.ReleaseCall>,Api.Template.ApplicationService.Interfaces.ISubProviderAppService,Api.Template.ApplicationService.Interfaces.IReleaseCallInsurerAppService,Api.Template.ApplicationService.Interfaces.IPlanCostAppService,Api.Template.ApplicationService.Interfaces.IReleaseCallStatusAppService,Api.Template.ApplicationService.Interfaces.IProductAppService,Api.Template.ApplicationService.Interfaces.ICompanySizeAppService,Api.Template.ApplicationService.Interfaces.IReleaseCallTypeAppService,Api.Template.ApplicationService.Interfaces.IPlanAgeRangeGroupAppService,Api.Template.ApplicationService.Interfaces.IDocumentAppService,Api.Template.ApplicationService.Interfaces.IMultiplePayAppService,Api.Template.ApplicationService.Interfaces.IEqualityAppService,Api.Template.ApplicationService.Interfaces.IGlobalCapitalAppService,Api.Template.ApplicationService.Interfaces.IScheduleAppService,Api.Template.ApplicationService.Interfaces.IScheduleTaskAppService,Api.Template.ApplicationService.Interfaces.IScaleAppService,Api.Template.ApplicationService.Interfaces.IReleaseCallStatusActionAppService,Api.Template.ApplicationService.Interfaces.IInsurerAppService,Api.Common.Repository.Contracts.Core.Repository.IRepository`1<Api.Template.Domain.Models.ReleaseCallInProgressDetails>,Api.Template.ApplicationService.Interfaces.IUserAppService,Api.Template.ApplicationService.Interfaces.IEmailAppService,Api.Template.ApplicationService.Interfaces.IInternalSummaryAppService)": {
+        "System.Void Api.Template.ApplicationService.Services.ReleaseCallAppService::.ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Api.Common.Cqrs.Core.Bus.IMessageBus,AutoMapper.IMapper,Api.Common.Repository.Contracts.Core.Repository.IRepository`1<Api.Template.Domain.Models.HrTeam>,Api.Common.Repository.Contracts.Core.Repository.IRepository`1<Api.Template.Domain.Models.ReleaseCall>,Api.Template.ApplicationService.Interfaces.ISubProviderAppService,Api.Template.ApplicationService.Interfaces.IReleaseCallInsurerAppService,Api.Template.ApplicationService.Interfaces.IPlanCostAppService,Api.Template.ApplicationService.Interfaces.IPersonaAppService,Api.Template.ApplicationService.Interfaces.IProductAppService,Api.Template.ApplicationService.Interfaces.ICompanySizeAppService,Api.Template.ApplicationService.Interfaces.IReleaseCallTypeAppService,Api.Template.ApplicationService.Interfaces.IPlanAgeRangeGroupAppService,Api.Template.ApplicationService.Interfaces.IDocumentAppService,Api.Template.ApplicationService.Interfaces.IMultiplePayAppService,Api.Template.ApplicationService.Interfaces.IEqualityAppService,Api.Template.ApplicationService.Interfaces.IGlobalCapitalAppService,Api.Template.ApplicationService.Interfaces.IScheduleAppService,Api.Template.ApplicationService.Interfaces.IScheduleTaskAppService,Api.Template.ApplicationService.Interfaces.IScaleAppService,Api.Template.ApplicationService.Interfaces.IPersonaActionAppService,Api.Template.ApplicationService.Interfaces.IInsurerAppService,Api.Common.Repository.Contracts.Core.Repository.IRepository`1<Api.Template.Domain.Models.ReleaseCallInProgressDetails>,Api.Template.ApplicationService.Interfaces.IUserAppService,Api.Template.ApplicationService.Interfaces.IEmailAppService,Api.Template.ApplicationService.Interfaces.IInternalSummaryAppService)": {
           "Lines": {
             "72": 1689,
             "73": 1689,
@@ -17731,9 +17731,9 @@
         }
       }
     },
-    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.ApplicationService\\Services\\ReleaseCallStatusActionAppService.cs": {
-      "Api.Template.ApplicationService.Services.ReleaseCallStatusActionAppService": {
-        "System.Collections.Generic.IEnumerable`1<Api.Template.ApplicationService.ViewModels.ReleaseCallStatusActionViewModel> Api.Template.ApplicationService.Services.ReleaseCallStatusActionAppService::GetAll()": {
+    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.ApplicationService\\Services\\PersonaActionAppService.cs": {
+      "Api.Template.ApplicationService.Services.PersonaActionAppService": {
+        "System.Collections.Generic.IEnumerable`1<Api.Template.ApplicationService.ViewModels.PersonaActionViewModel> Api.Template.ApplicationService.Services.PersonaActionAppService::GetAll()": {
           "Lines": {
             "32": 0,
             "33": 0,
@@ -17758,7 +17758,7 @@
             }
           ]
         },
-        "Api.Template.ApplicationService.ViewModels.ReleaseCallStatusActionViewModel Api.Template.ApplicationService.Services.ReleaseCallStatusActionAppService::Get(System.Guid)": {
+        "Api.Template.ApplicationService.ViewModels.PersonaActionViewModel Api.Template.ApplicationService.Services.PersonaActionAppService::Get(System.Guid)": {
           "Lines": {
             "37": 0,
             "38": 0,
@@ -17766,7 +17766,7 @@
           },
           "Branches": []
         },
-        "Api.Template.ApplicationService.ViewModels.ReleaseCallStatusActionViewModel Api.Template.ApplicationService.Services.ReleaseCallStatusActionAppService::GetLastReleaseCallStatusActionByReleaseCallId(System.Guid)": {
+        "Api.Template.ApplicationService.ViewModels.PersonaActionViewModel Api.Template.ApplicationService.Services.PersonaActionAppService::GetLastPersonaActionByReleaseCallId(System.Guid)": {
           "Lines": {
             "42": 7,
             "43": 9,
@@ -17792,7 +17792,7 @@
             }
           ]
         },
-        "Api.Template.ApplicationService.ViewModels.ReleaseCallStatusActionViewModel Api.Template.ApplicationService.Services.ReleaseCallStatusActionAppService::GetReleaseCallStatusActionByReleaseCallId(System.Guid)": {
+        "Api.Template.ApplicationService.ViewModels.PersonaActionViewModel Api.Template.ApplicationService.Services.PersonaActionAppService::GetPersonaActionByReleaseCallId(System.Guid)": {
           "Lines": {
             "49": 0,
             "50": 0,
@@ -17818,7 +17818,7 @@
             }
           ]
         },
-        "System.Collections.Generic.IEnumerable`1<Api.Template.ApplicationService.ViewModels.ReleaseCallStatusActionViewModel> Api.Template.ApplicationService.Services.ReleaseCallStatusActionAppService::GetListByComment(System.String)": {
+        "System.Collections.Generic.IEnumerable`1<Api.Template.ApplicationService.ViewModels.PersonaActionViewModel> Api.Template.ApplicationService.Services.PersonaActionAppService::GetListByComment(System.String)": {
           "Lines": {
             "56": 0,
             "57": 0,
@@ -17847,7 +17847,7 @@
             }
           ]
         },
-        "System.Void Api.Template.ApplicationService.Services.ReleaseCallStatusActionAppService::.ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Api.Common.Cqrs.Core.Bus.IMessageBus,AutoMapper.IMapper,Api.Common.Repository.Contracts.Core.Repository.IRepository`1<Api.Template.Domain.Models.ReleaseCallStatusAction>)": {
+        "System.Void Api.Template.ApplicationService.Services.PersonaActionAppService::.ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Api.Common.Cqrs.Core.Bus.IMessageBus,AutoMapper.IMapper,Api.Common.Repository.Contracts.Core.Repository.IRepository`1<Api.Template.Domain.Models.PersonaAction>)": {
           "Lines": {
             "24": 1689,
             "25": 1689,
@@ -17860,9 +17860,9 @@
         }
       }
     },
-    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.ApplicationService\\Services\\ReleaseCallStatusAppService.cs": {
-      "Api.Template.ApplicationService.Services.ReleaseCallStatusAppService": {
-        "System.Collections.Generic.IEnumerable`1<Api.Template.ApplicationService.ViewModels.ReleaseCallStatusViewModel> Api.Template.ApplicationService.Services.ReleaseCallStatusAppService::GetAll()": {
+    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.ApplicationService\\Services\\PersonaAppService.cs": {
+      "Api.Template.ApplicationService.Services.PersonaAppService": {
+        "System.Collections.Generic.IEnumerable`1<Api.Template.ApplicationService.ViewModels.PersonaViewModel> Api.Template.ApplicationService.Services.PersonaAppService::GetAll()": {
           "Lines": {
             "33": 0,
             "34": 0,
@@ -17887,7 +17887,7 @@
             }
           ]
         },
-        "Api.Template.ApplicationService.ViewModels.ReleaseCallStatusViewModel Api.Template.ApplicationService.Services.ReleaseCallStatusAppService::Get(System.Guid)": {
+        "Api.Template.ApplicationService.ViewModels.PersonaViewModel Api.Template.ApplicationService.Services.PersonaAppService::Get(System.Guid)": {
           "Lines": {
             "38": 5,
             "39": 5,
@@ -17895,7 +17895,7 @@
           },
           "Branches": []
         },
-        "System.Collections.Generic.IEnumerable`1<Api.Template.ApplicationService.ViewModels.ReleaseCallStatusViewModel> Api.Template.ApplicationService.Services.ReleaseCallStatusAppService::GetListByName(System.String)": {
+        "System.Collections.Generic.IEnumerable`1<Api.Template.ApplicationService.ViewModels.PersonaViewModel> Api.Template.ApplicationService.Services.PersonaAppService::GetListByName(System.String)": {
           "Lines": {
             "43": 0,
             "44": 0,
@@ -17924,7 +17924,7 @@
             }
           ]
         },
-        "Api.Template.ApplicationService.ViewModels.ReleaseCallStatusViewModel Api.Template.ApplicationService.Services.ReleaseCallStatusAppService::GetById(System.Guid)": {
+        "Api.Template.ApplicationService.ViewModels.PersonaViewModel Api.Template.ApplicationService.Services.PersonaAppService::GetById(System.Guid)": {
           "Lines": {
             "52": 0,
             "53": 0,
@@ -17932,7 +17932,7 @@
           },
           "Branches": []
         },
-        "Api.Template.ApplicationService.ViewModels.ReleaseCallStatusViewModel Api.Template.ApplicationService.Services.ReleaseCallStatusAppService::Create(Api.Template.Domain.Commands.ReleaseCallsStatus.CreateReleaseCallStatusCommand)": {
+        "Api.Template.ApplicationService.ViewModels.PersonaViewModel Api.Template.ApplicationService.Services.PersonaAppService::Create(Api.Template.Domain.Commands.ReleaseCallsStatus.CreatePersonaCommand)": {
           "Lines": {
             "57": 4,
             "58": 4,
@@ -17944,7 +17944,7 @@
           },
           "Branches": []
         },
-        "Api.Template.ApplicationService.ViewModels.ReleaseCallStatusViewModel Api.Template.ApplicationService.Services.ReleaseCallStatusAppService::Update(Api.Template.Domain.Commands.ReleaseCallsStatus.UpdateReleaseCallStatusCommand)": {
+        "Api.Template.ApplicationService.ViewModels.PersonaViewModel Api.Template.ApplicationService.Services.PersonaAppService::Update(Api.Template.Domain.Commands.ReleaseCallsStatus.UpdatePersonaCommand)": {
           "Lines": {
             "66": 2,
             "67": 2,
@@ -17956,7 +17956,7 @@
           },
           "Branches": []
         },
-        "System.Void Api.Template.ApplicationService.Services.ReleaseCallStatusAppService::Delete(Api.Template.Domain.Commands.ReleaseCallsStatus.DeleteReleaseCallStatusCommand)": {
+        "System.Void Api.Template.ApplicationService.Services.PersonaAppService::Delete(Api.Template.Domain.Commands.ReleaseCallsStatus.DeletePersonaCommand)": {
           "Lines": {
             "75": 2,
             "76": 2,
@@ -17964,7 +17964,7 @@
           },
           "Branches": []
         },
-        "System.Void Api.Template.ApplicationService.Services.ReleaseCallStatusAppService::.ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Api.Common.Cqrs.Core.Bus.IMessageBus,AutoMapper.IMapper,Api.Common.Repository.Contracts.Core.Repository.IRepository`1<Api.Template.Domain.Models.ReleaseCallStatus>)": {
+        "System.Void Api.Template.ApplicationService.Services.PersonaAppService::.ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor,Api.Common.Cqrs.Core.Bus.IMessageBus,AutoMapper.IMapper,Api.Common.Repository.Contracts.Core.Repository.IRepository`1<Api.Template.Domain.Models.Persona>)": {
           "Lines": {
             "25": 1702,
             "26": 1702,
@@ -49386,9 +49386,9 @@
         }
       }
     },
-    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.DbEFCore\\Migrations\\20190405141254_ReleaseCallStatusRejected.cs": {
-      "Api.Template.DbEFCore.Migrations.ReleaseCallStatusRejected": {
-        "System.Void Api.Template.DbEFCore.Migrations.ReleaseCallStatusRejected::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)": {
+    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.DbEFCore\\Migrations\\20190405141254_PersonaRejected.cs": {
+      "Api.Template.DbEFCore.Migrations.PersonaRejected": {
+        "System.Void Api.Template.DbEFCore.Migrations.PersonaRejected::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)": {
           "Lines": {
             "10": 1,
             "11": 1,
@@ -49404,7 +49404,7 @@
           },
           "Branches": []
         },
-        "System.Void Api.Template.DbEFCore.Migrations.ReleaseCallStatusRejected::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)": {
+        "System.Void Api.Template.DbEFCore.Migrations.PersonaRejected::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)": {
           "Lines": {
             "24": 0,
             "25": 0,
@@ -49417,9 +49417,9 @@
         }
       }
     },
-    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.DbEFCore\\Migrations\\20190405141254_ReleaseCallStatusRejected.Designer.cs": {
-      "Api.Template.DbEFCore.Migrations.ReleaseCallStatusRejected": {
-        "System.Void Api.Template.DbEFCore.Migrations.ReleaseCallStatusRejected::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.DbEFCore\\Migrations\\20190405141254_PersonaRejected.Designer.cs": {
+      "Api.Template.DbEFCore.Migrations.PersonaRejected": {
+        "System.Void Api.Template.DbEFCore.Migrations.PersonaRejected::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)": {
           "Lines": {
             "17": 1,
             "19": 1,
@@ -117138,9 +117138,9 @@
         }
       }
     },
-    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.DbEFCore\\Mappings\\ReleaseCallStatusActionMapConfig.cs": {
-      "Api.Template.DbEFCore.Mappings.ReleaseCallStatusActionMapConfig": {
-        "System.Void Api.Template.DbEFCore.Mappings.ReleaseCallStatusActionMapConfig::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<Api.Template.Domain.Models.ReleaseCallStatusAction>)": {
+    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.DbEFCore\\Mappings\\PersonaActionMapConfig.cs": {
+      "Api.Template.DbEFCore.Mappings.PersonaActionMapConfig": {
+        "System.Void Api.Template.DbEFCore.Mappings.PersonaActionMapConfig::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<Api.Template.Domain.Models.PersonaAction>)": {
           "Lines": {
             "10": 2,
             "11": 2,
@@ -117175,8 +117175,8 @@
       }
     },
     "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.DbEFCore\\Mappings\\ReleaseCommunicationStatusMapConfig.cs": {
-      "Api.Template.DbEFCore.Mappings.ReleaseCallStatusMapConfig": {
-        "System.Void Api.Template.DbEFCore.Mappings.ReleaseCallStatusMapConfig::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<Api.Template.Domain.Models.ReleaseCallStatus>)": {
+      "Api.Template.DbEFCore.Mappings.PersonaMapConfig": {
+        "System.Void Api.Template.DbEFCore.Mappings.PersonaMapConfig::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<Api.Template.Domain.Models.Persona>)": {
           "Lines": {
             "10": 2,
             "11": 2,
@@ -118490,7 +118490,7 @@
     },
     "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.Domain\\Models\\PreservedCapitalRuleDefinition.cs": {
       "Api.Template.Domain.Models.PreservedCapitalRuleDefinition": {
-        "Api.Template.Domain.Models.ReleaseCallStatus Api.Template.Domain.Models.PreservedCapitalRuleDefinition::get_MultiplePay()": {
+        "Api.Template.Domain.Models.Persona Api.Template.Domain.Models.PreservedCapitalRuleDefinition::get_MultiplePay()": {
           "Lines": {
             "8": 5,
             "9": 5,
@@ -118501,7 +118501,7 @@
           },
           "Branches": []
         },
-        "Api.Template.Domain.Models.ReleaseCallStatus Api.Template.Domain.Models.PreservedCapitalRuleDefinition::get_Equality()": {
+        "Api.Template.Domain.Models.Persona Api.Template.Domain.Models.PreservedCapitalRuleDefinition::get_Equality()": {
           "Lines": {
             "16": 5,
             "17": 5,
@@ -118512,7 +118512,7 @@
           },
           "Branches": []
         },
-        "Api.Template.Domain.Models.ReleaseCallStatus Api.Template.Domain.Models.PreservedCapitalRuleDefinition::get_GlobalCapital()": {
+        "Api.Template.Domain.Models.Persona Api.Template.Domain.Models.PreservedCapitalRuleDefinition::get_GlobalCapital()": {
           "Lines": {
             "24": 5,
             "25": 5,
@@ -118523,7 +118523,7 @@
           },
           "Branches": []
         },
-        "Api.Template.Domain.Models.ReleaseCallStatus Api.Template.Domain.Models.PreservedCapitalRuleDefinition::get_Scale()": {
+        "Api.Template.Domain.Models.Persona Api.Template.Domain.Models.PreservedCapitalRuleDefinition::get_Scale()": {
           "Lines": {
             "32": 2,
             "33": 2,
@@ -118534,7 +118534,7 @@
           },
           "Branches": []
         },
-        "Api.Template.Domain.Models.ReleaseCallStatus Api.Template.Domain.Models.PreservedCapitalRuleDefinition::get_PlanCost()": {
+        "Api.Template.Domain.Models.Persona Api.Template.Domain.Models.PreservedCapitalRuleDefinition::get_PlanCost()": {
           "Lines": {
             "40": 2,
             "41": 2,
@@ -118644,13 +118644,13 @@
           },
           "Branches": []
         },
-        "System.Guid Api.Template.Domain.Models.ReleaseCall::get_ReleaseCallStatusId()": {
+        "System.Guid Api.Template.Domain.Models.ReleaseCall::get_PersonaId()": {
           "Lines": {
             "19": 4948
           },
           "Branches": []
         },
-        "Api.Template.Domain.Models.ReleaseCallStatus Api.Template.Domain.Models.ReleaseCall::get_ReleaseCallStatus()": {
+        "Api.Template.Domain.Models.Persona Api.Template.Domain.Models.ReleaseCall::get_Persona()": {
           "Lines": {
             "20": 1695
           },
@@ -119422,9 +119422,9 @@
         }
       }
     },
-    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.Domain\\Models\\ReleaseCallStatus.cs": {
-      "Api.Template.Domain.Models.ReleaseCallStatus": {
-        "System.String Api.Template.Domain.Models.ReleaseCallStatus::get_Name()": {
+    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.Domain\\Models\\Persona.cs": {
+      "Api.Template.Domain.Models.Persona": {
+        "System.String Api.Template.Domain.Models.Persona::get_Name()": {
           "Lines": {
             "11": 584
           },
@@ -119432,27 +119432,27 @@
         }
       }
     },
-    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.Domain\\Models\\ReleaseCallStatusAction.cs": {
-      "Api.Template.Domain.Models.ReleaseCallStatusAction": {
-        "System.Guid Api.Template.Domain.Models.ReleaseCallStatusAction::get_ReleaseCallId()": {
+    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.Domain\\Models\\PersonaAction.cs": {
+      "Api.Template.Domain.Models.PersonaAction": {
+        "System.Guid Api.Template.Domain.Models.PersonaAction::get_ReleaseCallId()": {
           "Lines": {
             "9": 54
           },
           "Branches": []
         },
-        "System.String Api.Template.Domain.Models.ReleaseCallStatusAction::get_Comments()": {
+        "System.String Api.Template.Domain.Models.PersonaAction::get_Comments()": {
           "Lines": {
             "14": 63
           },
           "Branches": []
         },
-        "System.Guid Api.Template.Domain.Models.ReleaseCallStatusAction::get_ReleaseCallStatusId()": {
+        "System.Guid Api.Template.Domain.Models.PersonaAction::get_PersonaId()": {
           "Lines": {
             "16": 54
           },
           "Branches": []
         },
-        "System.Int32 Api.Template.Domain.Models.ReleaseCallStatusAction::get_SecurityUserId()": {
+        "System.Int32 Api.Template.Domain.Models.PersonaAction::get_SecurityUserId()": {
           "Lines": {
             "17": 54
           },
@@ -119460,9 +119460,9 @@
         }
       }
     },
-    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.Domain\\Models\\ReleaseCallStatusDefinition.cs": {
-      "Api.Template.Domain.Models.ReleaseCallStatusDefinition": {
-        "Api.Template.Domain.Models.ReleaseCallStatus Api.Template.Domain.Models.ReleaseCallStatusDefinition::get_Draft()": {
+    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.Domain\\Models\\PersonaDefinition.cs": {
+      "Api.Template.Domain.Models.PersonaDefinition": {
+        "Api.Template.Domain.Models.Persona Api.Template.Domain.Models.PersonaDefinition::get_Draft()": {
           "Lines": {
             "8": 205,
             "9": 205,
@@ -119473,7 +119473,7 @@
           },
           "Branches": []
         },
-        "Api.Template.Domain.Models.ReleaseCallStatus Api.Template.Domain.Models.ReleaseCallStatusDefinition::get_InProgress()": {
+        "Api.Template.Domain.Models.Persona Api.Template.Domain.Models.PersonaDefinition::get_InProgress()": {
           "Lines": {
             "16": 10,
             "17": 10,
@@ -119484,7 +119484,7 @@
           },
           "Branches": []
         },
-        "Api.Template.Domain.Models.ReleaseCallStatus Api.Template.Domain.Models.ReleaseCallStatusDefinition::get_Approved()": {
+        "Api.Template.Domain.Models.Persona Api.Template.Domain.Models.PersonaDefinition::get_Approved()": {
           "Lines": {
             "24": 41,
             "25": 41,
@@ -119495,7 +119495,7 @@
           },
           "Branches": []
         },
-        "Api.Template.Domain.Models.ReleaseCallStatus Api.Template.Domain.Models.ReleaseCallStatusDefinition::get_Done()": {
+        "Api.Template.Domain.Models.Persona Api.Template.Domain.Models.PersonaDefinition::get_Done()": {
           "Lines": {
             "32": 2,
             "33": 2,
@@ -119506,7 +119506,7 @@
           },
           "Branches": []
         },
-        "Api.Template.Domain.Models.ReleaseCallStatus Api.Template.Domain.Models.ReleaseCallStatusDefinition::get_Approval()": {
+        "Api.Template.Domain.Models.Persona Api.Template.Domain.Models.PersonaDefinition::get_Approval()": {
           "Lines": {
             "40": 55,
             "41": 55,
@@ -119517,7 +119517,7 @@
           },
           "Branches": []
         },
-        "Api.Template.Domain.Models.ReleaseCallStatus Api.Template.Domain.Models.ReleaseCallStatusDefinition::get_Rejected()": {
+        "Api.Template.Domain.Models.Persona Api.Template.Domain.Models.PersonaDefinition::get_Rejected()": {
           "Lines": {
             "48": 196,
             "49": 196,
@@ -121793,7 +121793,7 @@
         }
       }
     },
-    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.Domain\\Commands\\ReleaseCalls\\PopulateReleaseCallStatusActionCommand.cs": {
+    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.Domain\\Commands\\ReleaseCalls\\PopulatePersonaActionCommand.cs": {
       "Api.Template.Domain.Commands.ReleaseCalls.PopulateConsultantReleaseCallVisionCommand": {
         "System.String Api.Template.Domain.Commands.ReleaseCalls.PopulateConsultantReleaseCallVisionCommand::get_ProviderName()": {
           "Lines": {
@@ -121955,7 +121955,7 @@
           },
           "Branches": []
         },
-        "System.Guid Api.Template.Domain.Commands.ReleaseCalls.PopulateReleaseDataCommand::get_ReleaseCallStatusId()": {
+        "System.Guid Api.Template.Domain.Commands.ReleaseCalls.PopulateReleaseDataCommand::get_PersonaId()": {
           "Lines": {
             "99": 658
           },
@@ -122257,33 +122257,33 @@
         }
       }
     },
-    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.Domain\\Commands\\ReleaseCalls\\ReleaseCallStatusActionCommand.cs": {
-      "Api.Template.Domain.Commands.ReleaseCalls.PopulateReleaseCallStatusActionCommand": {
-        "System.Guid Api.Template.Domain.Commands.ReleaseCalls.PopulateReleaseCallStatusActionCommand::get_ReleaseCallId()": {
+    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.Domain\\Commands\\ReleaseCalls\\PersonaActionCommand.cs": {
+      "Api.Template.Domain.Commands.ReleaseCalls.PopulatePersonaActionCommand": {
+        "System.Guid Api.Template.Domain.Commands.ReleaseCalls.PopulatePersonaActionCommand::get_ReleaseCallId()": {
           "Lines": {
             "20": 45
           },
           "Branches": []
         },
-        "System.Guid Api.Template.Domain.Commands.ReleaseCalls.PopulateReleaseCallStatusActionCommand::get_ReleaseCallStatusId()": {
+        "System.Guid Api.Template.Domain.Commands.ReleaseCalls.PopulatePersonaActionCommand::get_PersonaId()": {
           "Lines": {
             "21": 54
           },
           "Branches": []
         },
-        "System.String Api.Template.Domain.Commands.ReleaseCalls.PopulateReleaseCallStatusActionCommand::get_Comments()": {
+        "System.String Api.Template.Domain.Commands.ReleaseCalls.PopulatePersonaActionCommand::get_Comments()": {
           "Lines": {
             "22": 28
           },
           "Branches": []
         },
-        "System.Int32 Api.Template.Domain.Commands.ReleaseCalls.PopulateReleaseCallStatusActionCommand::get_SecurityUserId()": {
+        "System.Int32 Api.Template.Domain.Commands.ReleaseCalls.PopulatePersonaActionCommand::get_SecurityUserId()": {
           "Lines": {
             "23": 27
           },
           "Branches": []
         },
-        "System.Void Api.Template.Domain.Commands.ReleaseCalls.PopulateReleaseCallStatusActionCommand::.ctor(System.Guid,System.Guid,System.String,System.Int32)": {
+        "System.Void Api.Template.Domain.Commands.ReleaseCalls.PopulatePersonaActionCommand::.ctor(System.Guid,System.Guid,System.String,System.Int32)": {
           "Lines": {
             "8": 18,
             "9": 18,
@@ -122377,21 +122377,21 @@
         }
       }
     },
-    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.Domain\\Commands\\ReleaseCalls\\UpdateReleaseCallStatusIdCommand.cs": {
-      "Api.Template.Domain.Commands.ReleaseCalls.UpdateReleaseCallStatusIdCommand": {
-        "System.Guid Api.Template.Domain.Commands.ReleaseCalls.UpdateReleaseCallStatusIdCommand::get_ReleaseCallId()": {
+    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.Domain\\Commands\\ReleaseCalls\\UpdatePersonaIdCommand.cs": {
+      "Api.Template.Domain.Commands.ReleaseCalls.UpdatePersonaIdCommand": {
+        "System.Guid Api.Template.Domain.Commands.ReleaseCalls.UpdatePersonaIdCommand::get_ReleaseCallId()": {
           "Lines": {
             "17": 656
           },
           "Branches": []
         },
-        "System.Guid Api.Template.Domain.Commands.ReleaseCalls.UpdateReleaseCallStatusIdCommand::get_ReleaseCallStatusId()": {
+        "System.Guid Api.Template.Domain.Commands.ReleaseCalls.UpdatePersonaIdCommand::get_PersonaId()": {
           "Lines": {
             "18": 656
           },
           "Branches": []
         },
-        "System.Void Api.Template.Domain.Commands.ReleaseCalls.UpdateReleaseCallStatusIdCommand::.ctor(System.Guid,System.Guid)": {
+        "System.Void Api.Template.Domain.Commands.ReleaseCalls.UpdatePersonaIdCommand::.ctor(System.Guid,System.Guid)": {
           "Lines": {
             "8": 328,
             "9": 328,
@@ -122433,14 +122433,14 @@
       }
     },
     "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.Domain\\Commands\\ReleaseCallsStatus\\CreateReleaseCommunicationStatusCommand.cs": {
-      "Api.Template.Domain.Commands.ReleaseCallsStatus.CreateReleaseCallStatusCommand": {
-        "System.String Api.Template.Domain.Commands.ReleaseCallsStatus.CreateReleaseCallStatusCommand::get_Name()": {
+      "Api.Template.Domain.Commands.ReleaseCallsStatus.CreatePersonaCommand": {
+        "System.String Api.Template.Domain.Commands.ReleaseCallsStatus.CreatePersonaCommand::get_Name()": {
           "Lines": {
             "16": 24
           },
           "Branches": []
         },
-        "System.Void Api.Template.Domain.Commands.ReleaseCallsStatus.CreateReleaseCallStatusCommand::.ctor(System.String)": {
+        "System.Void Api.Template.Domain.Commands.ReleaseCallsStatus.CreatePersonaCommand::.ctor(System.String)": {
           "Lines": {
             "8": 8,
             "9": 8,
@@ -122452,14 +122452,14 @@
       }
     },
     "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.Domain\\Commands\\ReleaseCallsStatus\\DeleteReleaseCommunicationStatusCommand.cs": {
-      "Api.Template.Domain.Commands.ReleaseCallsStatus.DeleteReleaseCallStatusCommand": {
-        "System.Guid Api.Template.Domain.Commands.ReleaseCallsStatus.DeleteReleaseCallStatusCommand::get_Id()": {
+      "Api.Template.Domain.Commands.ReleaseCallsStatus.DeletePersonaCommand": {
+        "System.Guid Api.Template.Domain.Commands.ReleaseCallsStatus.DeletePersonaCommand::get_Id()": {
           "Lines": {
             "14": 6
           },
           "Branches": []
         },
-        "System.Void Api.Template.Domain.Commands.ReleaseCallsStatus.DeleteReleaseCallStatusCommand::.ctor(System.Guid)": {
+        "System.Void Api.Template.Domain.Commands.ReleaseCallsStatus.DeletePersonaCommand::.ctor(System.Guid)": {
           "Lines": {
             "9": 2,
             "10": 2,
@@ -122471,20 +122471,20 @@
       }
     },
     "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.Domain\\Commands\\ReleaseCallsStatus\\UpdateReleaseCommunicationStatusCommand.cs": {
-      "Api.Template.Domain.Commands.ReleaseCallsStatus.UpdateReleaseCallStatusCommand": {
-        "System.String Api.Template.Domain.Commands.ReleaseCallsStatus.UpdateReleaseCallStatusCommand::get_Name()": {
+      "Api.Template.Domain.Commands.ReleaseCallsStatus.UpdatePersonaCommand": {
+        "System.String Api.Template.Domain.Commands.ReleaseCallsStatus.UpdatePersonaCommand::get_Name()": {
           "Lines": {
             "18": 12
           },
           "Branches": []
         },
-        "System.Guid Api.Template.Domain.Commands.ReleaseCallsStatus.UpdateReleaseCallStatusCommand::get_Id()": {
+        "System.Guid Api.Template.Domain.Commands.ReleaseCallsStatus.UpdatePersonaCommand::get_Id()": {
           "Lines": {
             "20": 12
           },
           "Branches": []
         },
-        "System.Void Api.Template.Domain.Commands.ReleaseCallsStatus.UpdateReleaseCallStatusCommand::.ctor(System.Guid,System.String)": {
+        "System.Void Api.Template.Domain.Commands.ReleaseCallsStatus.UpdatePersonaCommand::.ctor(System.Guid,System.String)": {
           "Lines": {
             "9": 4,
             "10": 4,
@@ -124626,9 +124626,9 @@
         }
       }
     },
-    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.Domain\\CommandHandlers\\ReleaseCallStatus\\CreateReleaseCallStatusCommandHandler.cs": {
-      "Api.Template.Domain.CommandHandlers.ReleaseCallsStatus.CreateReleaseCallStatusCommandHandler": {
-        "System.Threading.Tasks.Task`1<Api.Template.Domain.Models.ReleaseCallStatus> Api.Template.Domain.CommandHandlers.ReleaseCallsStatus.CreateReleaseCallStatusCommandHandler::Handle(Api.Template.Domain.Commands.ReleaseCallsStatus.CreateReleaseCallStatusCommand)": {
+    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.Domain\\CommandHandlers\\Persona\\CreatePersonaCommandHandler.cs": {
+      "Api.Template.Domain.CommandHandlers.ReleaseCallsStatus.CreatePersonaCommandHandler": {
+        "System.Threading.Tasks.Task`1<Api.Template.Domain.Models.Persona> Api.Template.Domain.CommandHandlers.ReleaseCallsStatus.CreatePersonaCommandHandler::Handle(Api.Template.Domain.Commands.ReleaseCallsStatus.CreatePersonaCommand)": {
           "Lines": {
             "20": 4,
             "21": 4,
@@ -124648,7 +124648,7 @@
           },
           "Branches": []
         },
-        "System.Void Api.Template.Domain.CommandHandlers.ReleaseCallsStatus.CreateReleaseCallStatusCommandHandler::.ctor(Api.Common.Repository.Contracts.Core.Repository.IRepository`1<Api.Template.Domain.Models.ReleaseCallStatus>)": {
+        "System.Void Api.Template.Domain.CommandHandlers.ReleaseCallsStatus.CreatePersonaCommandHandler::.ctor(Api.Common.Repository.Contracts.Core.Repository.IRepository`1<Api.Template.Domain.Models.Persona>)": {
           "Lines": {
             "14": 4,
             "15": 4,
@@ -124659,9 +124659,9 @@
         }
       }
     },
-    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.Domain\\CommandHandlers\\ReleaseCallStatus\\DeleteReleaseCallStatusCommandHandler.cs": {
-      "Api.Template.Domain.CommandHandlers.ReleaseCallsStatus.DeleteReleaseCallStatusCommandHandler": {
-        "System.Threading.Tasks.Task Api.Template.Domain.CommandHandlers.ReleaseCallsStatus.DeleteReleaseCallStatusCommandHandler::Handle(Api.Template.Domain.Commands.ReleaseCallsStatus.DeleteReleaseCallStatusCommand)": {
+    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.Domain\\CommandHandlers\\Persona\\DeletePersonaCommandHandler.cs": {
+      "Api.Template.Domain.CommandHandlers.ReleaseCallsStatus.DeletePersonaCommandHandler": {
+        "System.Threading.Tasks.Task Api.Template.Domain.CommandHandlers.ReleaseCallsStatus.DeletePersonaCommandHandler::Handle(Api.Template.Domain.Commands.ReleaseCallsStatus.DeletePersonaCommand)": {
           "Lines": {
             "20": 2,
             "22": 2,
@@ -124670,7 +124670,7 @@
           },
           "Branches": []
         },
-        "System.Void Api.Template.Domain.CommandHandlers.ReleaseCallsStatus.DeleteReleaseCallStatusCommandHandler::.ctor(Api.Common.Repository.Contracts.Core.Repository.IRepository`1<Api.Template.Domain.Models.ReleaseCallStatus>)": {
+        "System.Void Api.Template.Domain.CommandHandlers.ReleaseCallsStatus.DeletePersonaCommandHandler::.ctor(Api.Common.Repository.Contracts.Core.Repository.IRepository`1<Api.Template.Domain.Models.Persona>)": {
           "Lines": {
             "14": 2,
             "15": 2,
@@ -124681,9 +124681,9 @@
         }
       }
     },
-    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.Domain\\CommandHandlers\\ReleaseCallStatus\\UpdateReleaseCallStatusCommandHandler.cs": {
-      "Api.Template.Domain.CommandHandlers.ReleaseCallsStatus.UpdateReleaseCallStatusCommandHandler": {
-        "System.Threading.Tasks.Task`1<Api.Template.Domain.Models.ReleaseCallStatus> Api.Template.Domain.CommandHandlers.ReleaseCallsStatus.UpdateReleaseCallStatusCommandHandler::Handle(Api.Template.Domain.Commands.ReleaseCallsStatus.UpdateReleaseCallStatusCommand)": {
+    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.Domain\\CommandHandlers\\Persona\\UpdatePersonaCommandHandler.cs": {
+      "Api.Template.Domain.CommandHandlers.ReleaseCallsStatus.UpdatePersonaCommandHandler": {
+        "System.Threading.Tasks.Task`1<Api.Template.Domain.Models.Persona> Api.Template.Domain.CommandHandlers.ReleaseCallsStatus.UpdatePersonaCommandHandler::Handle(Api.Template.Domain.Commands.ReleaseCallsStatus.UpdatePersonaCommand)": {
           "Lines": {
             "20": 2,
             "21": 2,
@@ -124701,7 +124701,7 @@
           },
           "Branches": []
         },
-        "System.Void Api.Template.Domain.CommandHandlers.ReleaseCallsStatus.UpdateReleaseCallStatusCommandHandler::.ctor(Api.Common.Repository.Contracts.Core.Repository.IRepository`1<Api.Template.Domain.Models.ReleaseCallStatus>)": {
+        "System.Void Api.Template.Domain.CommandHandlers.ReleaseCallsStatus.UpdatePersonaCommandHandler::.ctor(Api.Common.Repository.Contracts.Core.Repository.IRepository`1<Api.Template.Domain.Models.Persona>)": {
           "Lines": {
             "14": 2,
             "15": 2,
@@ -126266,9 +126266,9 @@
         }
       }
     },
-    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.Domain\\CommandHandlers\\ReleaseCalls\\PopulateReleaseCallStatusActionCommandHandler.cs": {
-      "Api.Template.Domain.CommandHandlers.ReleaseCalls.PopulateReleaseCallStatusActionCommandHandler": {
-        "System.Threading.Tasks.Task`1<Api.Template.Domain.Models.ReleaseCallStatusAction> Api.Template.Domain.CommandHandlers.ReleaseCalls.PopulateReleaseCallStatusActionCommandHandler::Handle(Api.Template.Domain.Commands.ReleaseCalls.PopulateReleaseCallStatusActionCommand)": {
+    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.Domain\\CommandHandlers\\ReleaseCalls\\PopulatePersonaActionCommandHandler.cs": {
+      "Api.Template.Domain.CommandHandlers.ReleaseCalls.PopulatePersonaActionCommandHandler": {
+        "System.Threading.Tasks.Task`1<Api.Template.Domain.Models.PersonaAction> Api.Template.Domain.CommandHandlers.ReleaseCalls.PopulatePersonaActionCommandHandler::Handle(Api.Template.Domain.Commands.ReleaseCalls.PopulatePersonaActionCommand)": {
           "Lines": {
             "24": 9,
             "25": 9,
@@ -126328,7 +126328,7 @@
           },
           "Branches": []
         },
-        "System.Void Api.Template.Domain.CommandHandlers.ReleaseCalls.PopulateReleaseCallStatusActionCommandHandler::.ctor(Api.Common.Repository.Contracts.Core.Repository.IRepository`1<Api.Template.Domain.Models.ReleaseCall>,Api.Common.Repository.Contracts.Core.Repository.IRepository`1<Api.Template.Domain.Models.ReleaseCallStatusAction>)": {
+        "System.Void Api.Template.Domain.CommandHandlers.ReleaseCalls.PopulatePersonaActionCommandHandler::.ctor(Api.Common.Repository.Contracts.Core.Repository.IRepository`1<Api.Template.Domain.Models.ReleaseCall>,Api.Common.Repository.Contracts.Core.Repository.IRepository`1<Api.Template.Domain.Models.PersonaAction>)": {
           "Lines": {
             "17": 9,
             "18": 9,
@@ -126339,8 +126339,8 @@
           "Branches": []
         }
       },
-      "Api.Template.Domain.CommandHandlers.ReleaseCalls.PopulateReleaseCallStatusActionCommandHandler/<>c__DisplayClass3_0": {
-        "Api.Template.Domain.Models.ReleaseCallStatusAction Api.Template.Domain.CommandHandlers.ReleaseCalls.PopulateReleaseCallStatusActionCommandHandler/<>c__DisplayClass3_0::<Handle>b__0()": {
+      "Api.Template.Domain.CommandHandlers.ReleaseCalls.PopulatePersonaActionCommandHandler/<>c__DisplayClass3_0": {
+        "Api.Template.Domain.Models.PersonaAction Api.Template.Domain.CommandHandlers.ReleaseCalls.PopulatePersonaActionCommandHandler/<>c__DisplayClass3_0::<Handle>b__0()": {
           "Lines": {},
           "Branches": [
             {
@@ -126822,9 +126822,9 @@
         }
       }
     },
-    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.Domain\\CommandHandlers\\ReleaseCalls\\UpdateReleaseCallStatusIdCommandHandler.cs": {
-      "Api.Template.Domain.CommandHandlers.ReleaseCalls.UpdateReleaseCallStatusIdCommandHandler": {
-        "System.Threading.Tasks.Task`1<Api.Template.Domain.Models.ReleaseCall> Api.Template.Domain.CommandHandlers.ReleaseCalls.UpdateReleaseCallStatusIdCommandHandler::Handle(Api.Template.Domain.Commands.ReleaseCalls.UpdateReleaseCallStatusIdCommand)": {
+    "C:\\alper-apps\\Api.Template..PortalRH.Backend.CI\\Api.Template.Domain\\CommandHandlers\\ReleaseCalls\\UpdatePersonaIdCommandHandler.cs": {
+      "Api.Template.Domain.CommandHandlers.ReleaseCalls.UpdatePersonaIdCommandHandler": {
+        "System.Threading.Tasks.Task`1<Api.Template.Domain.Models.ReleaseCall> Api.Template.Domain.CommandHandlers.ReleaseCalls.UpdatePersonaIdCommandHandler::Handle(Api.Template.Domain.Commands.ReleaseCalls.UpdatePersonaIdCommand)": {
           "Lines": {
             "21": 164,
             "22": 164,
@@ -126848,7 +126848,7 @@
           },
           "Branches": []
         },
-        "System.Void Api.Template.Domain.CommandHandlers.ReleaseCalls.UpdateReleaseCallStatusIdCommandHandler::.ctor(Api.Common.Repository.Contracts.Core.Repository.IRepository`1<Api.Template.Domain.Models.ReleaseCall>)": {
+        "System.Void Api.Template.Domain.CommandHandlers.ReleaseCalls.UpdatePersonaIdCommandHandler::.ctor(Api.Common.Repository.Contracts.Core.Repository.IRepository`1<Api.Template.Domain.Models.ReleaseCall>)": {
           "Lines": {
             "15": 164,
             "16": 164,
@@ -126858,8 +126858,8 @@
           "Branches": []
         }
       },
-      "Api.Template.Domain.CommandHandlers.ReleaseCalls.UpdateReleaseCallStatusIdCommandHandler/<>c__DisplayClass2_0": {
-        "Api.Template.Domain.Models.ReleaseCall Api.Template.Domain.CommandHandlers.ReleaseCalls.UpdateReleaseCallStatusIdCommandHandler/<>c__DisplayClass2_0::<Handle>b__0()": {
+      "Api.Template.Domain.CommandHandlers.ReleaseCalls.UpdatePersonaIdCommandHandler/<>c__DisplayClass2_0": {
+        "Api.Template.Domain.Models.ReleaseCall Api.Template.Domain.CommandHandlers.ReleaseCalls.UpdatePersonaIdCommandHandler/<>c__DisplayClass2_0::<Handle>b__0()": {
           "Lines": {},
           "Branches": [
             {

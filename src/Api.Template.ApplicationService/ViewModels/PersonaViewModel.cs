@@ -1,6 +1,6 @@
 ﻿namespace Api.Template.ApplicationService.ViewModels
 {
-    public class ReleaseCallStatusViewModel : BaseViewModel
+    public class PersonaViewModel : BaseViewModel
     {
         public string Name { get; set; }
     }

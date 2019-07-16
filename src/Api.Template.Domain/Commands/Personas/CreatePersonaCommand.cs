@@ -1,11 +1,11 @@
 ﻿using Api.Common.Cqrs.Core.Commands;
 using System.ComponentModel.DataAnnotations;
 
-namespace Api.Template.Domain.Commands.ReleaseCallsStatus
+namespace Api.Template.Domain.Commands.Personas
 {
-    public class CreateReleaseCallStatusCommand : Command
+    public class CreatePersonaCommand : Command
     {
-        public CreateReleaseCallStatusCommand(string name)
+        public CreatePersonaCommand(string name)
         {
             Name = name;
         }

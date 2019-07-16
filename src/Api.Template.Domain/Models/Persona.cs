@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Api.Template.Domain.Models
 {
-    public class ReleaseCallStatus : DomainEntity
+    public class Persona : DomainEntity
     {
         [MinLength(2)]
         [MaxLength(255)]

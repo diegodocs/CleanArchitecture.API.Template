@@ -2,11 +2,11 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Api.Template.Domain.Commands.ReleaseCallsStatus
+namespace Api.Template.Domain.Commands.Personas
 {
-    public class UpdateReleaseCallStatusCommand : Command
+    public class UpdatePersonaCommand : Command
     {
-        public UpdateReleaseCallStatusCommand(Guid id, string name)
+        public UpdatePersonaCommand(Guid id, string name)
         {
             Id = id;
             Name = name;

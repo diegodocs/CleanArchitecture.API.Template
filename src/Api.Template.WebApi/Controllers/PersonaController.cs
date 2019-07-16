@@ -1,15 +1,15 @@
 ﻿using Api.Template.ApplicationService.Interfaces;
-using Api.Template.Domain.Commands.ReleaseCallsStatus;
+using Api.Template.Domain.Commands.Personas;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
 namespace Api.Template.CI.WebApi.Controllers
 {
-    public class ReleaseCallStatusController : BaseController
+    public class PersonaController : BaseController
     {
-        private readonly IReleaseCallStatusAppService appService;
+        private readonly IPersonaAppService appService;
 
-        public ReleaseCallStatusController(IReleaseCallStatusAppService appService)
+        public PersonaController(IPersonaAppService appService)
         {
             this.appService = appService;
         }
@@ -53,7 +53,7 @@ namespace Api.Template.CI.WebApi.Controllers
         /// <param name="command"></param>
         /// <returns></returns>
         [HttpPost]
-        public IActionResult Post([FromBody] CreateReleaseCallStatusCommand command)
+        public IActionResult Post([FromBody] CreatePersonaCommand command)
         {
             return Ok(appService.Create(command));
         }
@@ -66,7 +66,7 @@ namespace Api.Template.CI.WebApi.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete([FromRoute] Guid id)
         {
-            appService.Delete(new DeleteReleaseCallStatusCommand(id));
+            appService.Delete(new DeletePersonaCommand(id));
             return Ok();
         }
 
@@ -76,7 +76,7 @@ namespace Api.Template.CI.WebApi.Controllers
         /// <param name="command"></param>
         /// <returns></returns>
         [HttpPut("{id}")]
-        public IActionResult Update([FromRoute] Guid id, [FromBody] UpdateReleaseCallStatusCommand command)
+        public IActionResult Update([FromRoute] Guid id, [FromBody] UpdatePersonaCommand command)
         {
             return Ok(appService.Update(command));
         }

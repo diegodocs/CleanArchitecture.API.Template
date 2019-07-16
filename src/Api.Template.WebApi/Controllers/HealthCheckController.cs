@@ -9,10 +9,10 @@ namespace Api.Template.CI.WebApi.Controllers
 {
     public class HealthCheckController : BaseController
     {
-        private readonly IReleaseCallStatusAppService appService;
+        private readonly IPersonaAppService appService;
         private readonly ILogger<HealthCheckController> logger;
 
-        public HealthCheckController(IReleaseCallStatusAppService appService,
+        public HealthCheckController(IPersonaAppService appService,
             ILogger<HealthCheckController> logger)
         {
             this.appService = appService;

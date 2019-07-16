@@ -2,11 +2,11 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Api.Template.Domain.Commands.ReleaseCallsStatus
+namespace Api.Template.Domain.Commands.Personas
 {
-    public class DeleteReleaseCallStatusCommand : Command
+    public class DeletePersonaCommand : Command
     {
-        public DeleteReleaseCallStatusCommand(Guid id)
+        public DeletePersonaCommand(Guid id)
         {
             Id = id;
         }

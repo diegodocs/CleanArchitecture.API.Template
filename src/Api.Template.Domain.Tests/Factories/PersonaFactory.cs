@@ -1,53 +1,53 @@
-﻿using Api.Template.ApplicationService.Interfaces;
+﻿using Api.Common.Repository.Contracts.Core.Validations;
+using Api.Template.ApplicationService.Interfaces;
 using Api.Template.ApplicationService.ViewModels;
-using Api.Template.Domain.Commands.ReleaseCallsStatus;
+using Api.Template.Domain.Commands.Personas;
 using Api.Template.Domain.Tests.Factories.Interface;
-using Api.Common.Repository.Contracts.Core.Validations;
 using FluentAssertions;
 using System;
 using System.Collections.Generic;
 
 namespace Api.Template.Domain.Tests.Factories
 {
-    public class ReleaseCallStatusFactory : IBaseDomainTestFactory
+    public class PersonaFactory : IBaseDomainTestFactory
     {
-        private readonly IReleaseCallStatusAppService appService;
+        private readonly IPersonaAppService appService;
 
-        public ReleaseCallStatusFactory(IReleaseCallStatusAppService appService)
+        public PersonaFactory(IPersonaAppService appService)
         {
             this.appService = appService;
         }
 
-        public ReleaseCallStatusViewModel Create()
+        public PersonaViewModel Create()
         {
             var name = "Rascunho";
 
-            var command = new CreateReleaseCallStatusCommand(name);
+            var command = new CreatePersonaCommand(name);
             return Create(command);
         }
 
         public void Delete(Guid id)
         {
-            var commandDelete = new DeleteReleaseCallStatusCommand(id);
+            var commandDelete = new DeletePersonaCommand(id);
             appService.Delete(commandDelete);
         }
 
-        public ReleaseCallStatusViewModel Get(Guid id)
+        public PersonaViewModel Get(Guid id)
         {
             return appService.Get(id);
         }
 
-        public IEnumerable<ReleaseCallStatusViewModel> GetAll()
+        public IEnumerable<PersonaViewModel> GetAll()
         {
             return appService.GetAll();
         }
 
-        public IEnumerable<ReleaseCallStatusViewModel> GetListByName(string name)
+        public IEnumerable<PersonaViewModel> GetListByName(string name)
         {
             return appService.GetListByName(name);
         }
 
-        public ReleaseCallStatusViewModel Create(CreateReleaseCallStatusCommand command)
+        public PersonaViewModel Create(CreatePersonaCommand command)
         {
             //arrange
             const int expectedNumberOfErrors = 0;
@@ -63,7 +63,7 @@ namespace Api.Template.Domain.Tests.Factories
             return response;
         }
 
-        public ReleaseCallStatusViewModel Update(UpdateReleaseCallStatusCommand command)
+        public PersonaViewModel Update(UpdatePersonaCommand command)
         {
             //arrange
             const int expectedNumberOfErrors = 0;

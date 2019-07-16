@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace Api.Template.Integration.Tests.IntegrationTests
 {
-    public class ReleaseCallStatusControllerTest
+    public class PersonaControllerTest
     {
-        private readonly ReleaseCallStatusControllerFactory factory;
+        private readonly PersonaControllerFactory factory;
 
-        public ReleaseCallStatusControllerTest()
+        public PersonaControllerTest()
         {
-            factory = new ReleaseCallStatusControllerFactory(BaseControllerTest.Client);
+            factory = new PersonaControllerFactory(BaseControllerTest.Client);
         }
 
         [Test]
@@ -25,11 +25,11 @@ namespace Api.Template.Integration.Tests.IntegrationTests
             var responseGet = await factory.Get(viewModelCreate.Id);
 
             var viewModelGet =
-                JsonConvert.DeserializeObject<ReleaseCallStatusViewModel>(responseGet.Result.ToString());
+                JsonConvert.DeserializeObject<PersonaViewModel>(responseGet.Result.ToString());
 
             // Assert
             responseGet.StatusCode.Should().Be((int)HttpStatusCode.OK);
-            viewModelGet.Should().BeOfType<ReleaseCallStatusViewModel>();
+            viewModelGet.Should().BeOfType<PersonaViewModel>();
             viewModelGet.Id.Should().NotBeEmpty();
             viewModelGet.Id.Should().Be(viewModelCreate.Id);
             viewModelGet.Name.Should().Be(viewModelCreate.Name);
@@ -55,11 +55,11 @@ namespace Api.Template.Integration.Tests.IntegrationTests
             var viewModelUpdate = await factory.Update(viewModelCreate);
             var responseGet = await factory.Get(viewModelCreate.Id);
             var viewModelGet =
-                JsonConvert.DeserializeObject<ReleaseCallStatusViewModel>(responseGet.Result.ToString());
+                JsonConvert.DeserializeObject<PersonaViewModel>(responseGet.Result.ToString());
 
             // Assert
             responseGet.StatusCode.Should().Be((int)HttpStatusCode.OK);
-            viewModelGet.Should().BeOfType<ReleaseCallStatusViewModel>();
+            viewModelGet.Should().BeOfType<PersonaViewModel>();
             viewModelGet.Id.Should().Be(viewModelUpdate.Id);
             viewModelGet.Name.Should().Be(viewModelUpdate.Name);
         }
@@ -73,7 +73,7 @@ namespace Api.Template.Integration.Tests.IntegrationTests
 
             var responseGet = await factory.Get(viewModelCreate.Id);
             var viewModelGet =
-                JsonConvert.DeserializeObject<ReleaseCallStatusViewModel>(responseGet.Result.ToString());
+                JsonConvert.DeserializeObject<PersonaViewModel>(responseGet.Result.ToString());
 
             await factory.Delete(viewModelCreate.Id);
             var responseGetAfterDelete = await factory.Get(viewModelCreate.Id);

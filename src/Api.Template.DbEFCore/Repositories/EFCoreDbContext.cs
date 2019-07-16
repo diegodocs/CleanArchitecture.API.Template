@@ -13,7 +13,7 @@ namespace Api.Template.DbEFCore.Repositories
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //domain
-            modelBuilder.ApplyConfiguration(new ReleaseCallStatusMapConfig());
+            modelBuilder.ApplyConfiguration(new PersonaMapConfig());
         }
     }
 }

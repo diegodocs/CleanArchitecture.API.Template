@@ -1,6 +1,6 @@
-﻿using Api.Template.Domain.Commands.ReleaseCallsStatus;
+﻿using Api.Common.Repository.Contracts.Core.Exceptions;
+using Api.Template.Domain.Commands.Personas;
 using Api.Template.Domain.Tests.Factories;
-using Api.Common.Repository.Contracts.Core.Exceptions;
 using Autofac;
 using FluentAssertions;
 using NUnit.Framework;
@@ -10,13 +10,13 @@ using System.Linq;
 namespace Api.Template.Domain.Tests.UnitTests
 {
     [TestFixture]
-    public class ReleaseCallStatusDomainTests : BaseDomainTests
+    public class PersonaDomainTests : BaseDomainTests
     {
-        private readonly ReleaseCallStatusFactory factory;
+        private readonly PersonaFactory factory;
 
-        public ReleaseCallStatusDomainTests()
+        public PersonaDomainTests()
         {
-            factory = container.Resolve<ReleaseCallStatusFactory>();
+            factory = container.Resolve<PersonaFactory>();
         }
 
         [Test]
@@ -36,11 +36,11 @@ namespace Api.Template.Domain.Tests.UnitTests
         {
             //arrange
             var expectedNameAfterUpdate =
-                $"AfterUpdate-ReleaseCallStatus-Test-{DateTime.UtcNow.ToLongTimeString()}";
+                $"AfterUpdate-Persona-Test-{DateTime.UtcNow.ToLongTimeString()}";
 
             //act
             var responseCreate = factory.Create();
-            var commandUpdate = new UpdateReleaseCallStatusCommand(
+            var commandUpdate = new UpdatePersonaCommand(
                 responseCreate.Id,
                 expectedNameAfterUpdate);
 
@@ -57,11 +57,11 @@ namespace Api.Template.Domain.Tests.UnitTests
         {
             //arrange
             var expectedNameAfterUpdate =
-                $"AfterUpdate-ReleaseCallStatus-Test-{DateTime.UtcNow.ToLongTimeString()}";
+                $"AfterUpdate-Persona-Test-{DateTime.UtcNow.ToLongTimeString()}";
 
             //act
             var responseCreate = factory.Create();
-            var commandUpdate = new UpdateReleaseCallStatusCommand(
+            var commandUpdate = new UpdatePersonaCommand(
                 responseCreate.Id,
                 expectedNameAfterUpdate);
 
@@ -80,7 +80,7 @@ namespace Api.Template.Domain.Tests.UnitTests
             //arrange
             var name = "";
 
-            var command = new CreateReleaseCallStatusCommand(name);
+            var command = new CreatePersonaCommand(name);
 
             //act
             Action action = () => { factory.Create(command); };
@@ -100,7 +100,7 @@ namespace Api.Template.Domain.Tests.UnitTests
 
             var name = "";
 
-            var command = new CreateReleaseCallStatusCommand(name);
+            var command = new CreatePersonaCommand(name);
 
             //act
             Action action = () => { factory.Create(command); };

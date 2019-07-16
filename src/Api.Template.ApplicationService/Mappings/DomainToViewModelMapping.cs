@@ -8,7 +8,7 @@ namespace Api.Template.ApplicationService.Mappings
     {
         public DomainToViewModelMapping()
         {
-            CreateMap<ReleaseCallStatus, ReleaseCallStatusViewModel>();
+            CreateMap<Persona, PersonaViewModel>();
         }
     }
 }

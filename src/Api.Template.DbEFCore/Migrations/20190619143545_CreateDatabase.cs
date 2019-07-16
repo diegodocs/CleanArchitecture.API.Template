@@ -8,7 +8,7 @@ namespace Api.Template.DbEFCore.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "ReleaseCallStatus",
+                name: "Persona",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(nullable: false),
@@ -20,14 +20,14 @@ namespace Api.Template.DbEFCore.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ReleaseCallStatus", x => x.Id);
+                    table.PrimaryKey("PK_Persona", x => x.Id);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "ReleaseCallStatus");
+                name: "Persona");
         }
     }
 }

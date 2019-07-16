@@ -1,7 +1,7 @@
-﻿using Api.Template.ApplicationService.ViewModels;
-using Api.Template.Domain.Commands.ReleaseCallsStatus;
+﻿using Api.Common.WebServer.Server;
+using Api.Template.ApplicationService.ViewModels;
+using Api.Template.Domain.Commands.Personas;
 using Api.Template.Integration.Tests.Factories.Interface;
-using Api.Common.WebServer.Server;
 using FluentAssertions;
 using Newtonsoft.Json;
 using System;
@@ -12,28 +12,28 @@ using System.Threading.Tasks;
 
 namespace Api.Template.Integration.Tests.Factories
 {
-    public class ReleaseCallStatusControllerFactory : IBaseIntegrationTestFactory
+    public class PersonaControllerFactory : IBaseIntegrationTestFactory
     {
-        private const string url = "/api/v1/ReleaseCallStatus";
+        private const string url = "/api/v1/Persona";
         private readonly HttpClient client;
 
-        public ReleaseCallStatusControllerFactory(HttpClient client)
+        public PersonaControllerFactory(HttpClient client)
         {
             this.client = client;
         }
 
-        public async Task<ReleaseCallStatusViewModel> Create()
+        public async Task<PersonaViewModel> Create()
         {
             var name = "Draft";
 
             //Act
-            var responseModel = await Create(new CreateReleaseCallStatusCommand(name));
+            var responseModel = await Create(new CreatePersonaCommand(name));
             var viewModel =
-                JsonConvert.DeserializeObject<ReleaseCallStatusViewModel>(responseModel.Result.ToString());
+                JsonConvert.DeserializeObject<PersonaViewModel>(responseModel.Result.ToString());
 
             // Assert
             responseModel.StatusCode.Should().Be((int)HttpStatusCode.OK);
-            viewModel.Should().BeOfType<ReleaseCallStatusViewModel>();
+            viewModel.Should().BeOfType<PersonaViewModel>();
 
             viewModel.Id.Should().NotBeEmpty();
             viewModel.Name.Should().Be(name);
@@ -62,7 +62,7 @@ namespace Api.Template.Integration.Tests.Factories
             return responseModel;
         }
 
-        private async Task<ApiResponse> Create(CreateReleaseCallStatusCommand command)
+        private async Task<ApiResponse> Create(CreatePersonaCommand command)
         {
             // Arrange
             var requestBody =
@@ -80,12 +80,12 @@ namespace Api.Template.Integration.Tests.Factories
             return apiResponse;
         }
 
-        public async Task<ReleaseCallStatusViewModel> Update(ReleaseCallStatusViewModel viewModel)
+        public async Task<PersonaViewModel> Update(PersonaViewModel viewModel)
         {
             // Arrange
             viewModel.Name = $"{viewModel.Name}-{DateTime.UtcNow.ToLongTimeString()}";
 
-            var command = new UpdateReleaseCallStatusCommand(viewModel.Id, viewModel.Name);
+            var command = new UpdatePersonaCommand(viewModel.Id, viewModel.Name);
             var requestBody =
                 new StringContent(JsonConvert.SerializeObject(command), Encoding.UTF8, "application/json");
 
@@ -93,12 +93,12 @@ namespace Api.Template.Integration.Tests.Factories
             var response = await client.PutAsync($"{url}/{viewModel.Id}", requestBody);
             var apiResponse = JsonConvert.DeserializeObject<ApiResponse>(await response.Content.ReadAsStringAsync());
             var viewModelResponse =
-                JsonConvert.DeserializeObject<ReleaseCallStatusViewModel>(apiResponse.Result.ToString());
+                JsonConvert.DeserializeObject<PersonaViewModel>(apiResponse.Result.ToString());
 
             // Assert
             response.StatusCode.Should().Be(HttpStatusCode.OK);
             apiResponse.StatusCode.Should().Be((int)HttpStatusCode.OK);
-            viewModelResponse.Should().BeOfType<ReleaseCallStatusViewModel>();
+            viewModelResponse.Should().BeOfType<PersonaViewModel>();
 
             viewModelResponse.Id.Should().NotBeEmpty();
             viewModelResponse.Id.Should().Be(viewModel.Id);

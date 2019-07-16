@@ -19,7 +19,7 @@ namespace Api.Template.DbEFCore.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Api.Template.Domain.Models.ReleaseCallStatus", b =>
+            modelBuilder.Entity("Api.Template.Domain.Models.Persona", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
@@ -38,7 +38,7 @@ namespace Api.Template.DbEFCore.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ReleaseCallStatus");
+                    b.ToTable("Persona");
                 });
 #pragma warning restore 612, 618
         }
