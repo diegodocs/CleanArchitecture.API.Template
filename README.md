@@ -32,8 +32,8 @@ This project Api.Template cover concepts about:
  
 ## Development Tools
 
- - Visual Studio (2017) or Visual Studio Code
- - VSTS ( Backlog and Code Repository)
+ - Visual Studio (2019) or Visual Studio Code
+ - Azure DevOps ( Backlog and Code Repository)
  - MSSQL Server Management Studio 17 
  - Swagger Editor 
  - GIT
