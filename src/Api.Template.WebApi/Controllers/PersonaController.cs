@@ -78,6 +78,9 @@ namespace Api.Template.CI.WebApi.Controllers
         [HttpPut("{id}")]
         public IActionResult Update([FromRoute] Guid id, [FromBody] UpdatePersonaCommand command)
         {
+            if (!command.Id.Equals(id))
+                return BadRequest("Invalid Id passed from route");
+
             return Ok(appService.Update(command));
         }
     }

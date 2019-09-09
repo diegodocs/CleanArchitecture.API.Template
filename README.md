@@ -20,23 +20,55 @@ This project Api.Template cover concepts about:
 - [SOLID Principles of Object Oriented Design](https://www.pluralsight.com/courses/principles-oo-design)
 - [Domain-Driven Design Fundamentals](https://www.pluralsight.com/courses/domain-driven-design-fundamentals)
 
+## DotNetCore
+
+Using .NETCore version 2.2 
+
 ## 3rd Party Nuget Packages 
  
 - Autofac
 - AutoMapper
 - FluentAssertiong
-- FluentMigrator
 - EFCore
 - NUnit
 - Swagger (Swashbuckle) 
+- Serilog
  
 ## Development Tools
 
- - Visual Studio (2019) or Visual Studio Code
+ - Visual Studio (2017 or newer) or Visual Studio Code
  - Azure DevOps ( Backlog and Code Repository)
  - MSSQL Server Management Studio 17 
  - Swagger Editor 
  - GIT
+
+## How to clone this project
+
+```
+cd\
+mkdir repo
+cd repo
+git clone https://github.com/diegosmorf/CleanArchitecture.API.Template.git
+```
+
+### Cloning the strucuture using your namespace
+```
+powershell .\CopyProject.ps1 "Api.Template" "Your.Namespace"
+cd ..\Your.Namespace
+```
+
+### Restore, Build and Test
+```
+dotnet restore
+dotnet build
+dotnet test
+
+
+dotnet run --p Api.Template.WebApi
+
+```
+
+you can access this API via browser: http://localhost:5200/swagger
 
 ## 0 - Core
 Api.Common.Cqrs.Core is a basic set of interfaces for building a command and event driven CQRS application. 
