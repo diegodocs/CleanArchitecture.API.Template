@@ -20,7 +20,7 @@ namespace Api.Template.Domain.Tests.Factories
 
         public PersonaViewModel Create()
         {
-            var name = "Rascunho";
+            var name = "Student";
 
             var command = new CreatePersonaCommand(name);
             return Create(command);
