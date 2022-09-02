@@ -22,7 +22,7 @@ This project Api.Template cover concepts about:
 
 ## DotNetCore
 
-Using .NETCore version 2.2 
+Using .NET 6
 
 ## 3rd Party Nuget Packages 
  
