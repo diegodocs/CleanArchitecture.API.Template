@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.CodeAnalysis.Options;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -51,8 +52,11 @@ namespace Api.Template.Integration.Tests.Server
             {
                 options.UseSqlServer(Configuration.GetConnectionString("ApiDbConnection"));
             });
-
-            services.AddMvc(options => options.Filters.Add(typeof(ValidateModelAttribute)))
+            services.AddMvc(options =>
+                {
+                    options.Filters.Add(typeof(ValidateModelAttribute));
+                    options.EnableEndpointRouting = false;
+                })
                 .AddApplicationPart(Assembly.Load("Api.Template.WebApi"))
                 .AddJsonOptions(options =>
                 {
@@ -102,6 +106,7 @@ namespace Api.Template.Integration.Tests.Server
         {
             app.UseMiddleware<ApiResponseMiddleware>();
             app.UseMvc();
+            app.UseRouting();
             UpdateDatabaseUsingEfCore(app);
         }
 
